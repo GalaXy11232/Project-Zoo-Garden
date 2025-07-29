@@ -1,0 +1,94 @@
+var swiper = new Swiper(".mySwiper", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  initialSlide: Math.floor(document.querySelectorAll('.swiper-slide').length / 2),
+  coverflowEffect: {
+    rotate: 50,
+    stretch: 0,
+    depth: 100,
+    modifier: 0.9,
+    slideShadows: true,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+
+
+const plansData = [
+    { title: "FTC #9 (2024-2025)", description: "Ne pregătim pentru a participa la FIRST Tech Challenge în sezonul 9 din 2024-2025. Vom avea o echipă organizată eficient, alcătuită din membri specializați în diferite domenii și ne propunem să ne calificăm la etapa națională a competiției prin câștigarea unui premiu." },
+    { title: "ONCS 2025", description: "În anul școlar 2024-2025 vom participa la Olimpiada Națională de Creativitate Ştiinţifică cu diferite proiecte care pun în valoare aplicabilitatea excelentă a roboticii în diferite domenii. Acest concurs național ne oferă oportunitatea de a evidenția talentul membrilor noștri și ne propunem să ne calificăm la etapa națională." },
+    { title: "InfoEducație 2025", description: "Pentru următorul an, avem în plan participarea pe mai multe secțiuni în cadrul concursului InfoEducație, unde putem pune în valoare abilitățile digitale și tehnologice diverse ale membrilor clubului nostru." },
+];
+
+function generateDynamicContent() {
+    const container = document.getElementById("dynamic-content");
+  
+    plansData.forEach(plan => {
+      const dynamicHTML = `
+        <div class="box">
+          <h3>${plan.title}</h3>
+          <p>${plan.description}</p>
+        </div>
+      `;
+  
+      container.insertAdjacentHTML("beforeend", dynamicHTML);
+    });
+  }
+
+  generateDynamicContent();
+
+//Back to top button
+let calcScrollValue = () => {
+  let scrollProgress = document.getElementById("progress");
+  let progressValue = document.getElementById("progress-value");
+  let pos = document.documentElement.scrollTop;
+  let calcHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  let scrollValue = Math.round((pos * 100) / calcHeight);
+
+  if(pos > 100){
+    scrollProgress.style.display = "grid";
+  }
+  else{
+    scrollProgress.style.display = "none";
+  }
+  scrollProgress.addEventListener("click", () => {
+    document.documentElement.scrollTop = 0;
+  });
+  scrollProgress.style.background = `conic-gradient(#7b28ae ${scrollValue}%, #d7d7d7 ${scrollValue}%)`;
+};
+
+window.onscroll = calcScrollValue;
+window.onload = calcScrollValue;
+
+//Eliminare navbar
+const navbar = document.querySelector('.navbar');
+const navbarPlaceholder = document.createElement('div');
+navbarPlaceholder.style.height = `${navbar.offsetHeight}px`;
+navbarPlaceholder.style.display = 'none';
+
+window.addEventListener("scroll", navbar_function);
+
+function navbar_function(){
+  if(window.scrollY <= 600){
+    if (!navbar.classList.contains('fixed-top')) {
+      navbarPlaceholder.style.display = 'block';
+      navbar.classList.add('fixed-top');
+//       window.scrollTo({
+//         top: window.scrollY - 100,
+//       });
+    }
+  }
+  else{
+    if (navbar.classList.contains('fixed-top')) {
+      navbarPlaceholder.style.display = 'none';
+      navbar.classList.remove('fixed-top');
+//       window.scrollTo({
+//         top: window.scrollY + 100,
+//       });
+    }
+  }
+}
