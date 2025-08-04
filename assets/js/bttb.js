@@ -1,4 +1,3 @@
-//Back to top button
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let progressValue = document.getElementById("progress-value");
