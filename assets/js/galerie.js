@@ -1,18 +1,10 @@
 // Gallery
 
   var currentImgIndex;
-  var galleries = {
-    10: document.querySelectorAll("#galerie-10 img"),
-    9: document.querySelectorAll("#galerie-9 img"),
-    8: document.querySelectorAll("#galerie-8 img"),
-    7: document.querySelectorAll("#galerie-7 img"),
-    6: document.querySelectorAll("#galerie-6 img"),
-    5: document.querySelectorAll("#galerie-5 img"),
-    4: document.querySelectorAll("#galerie-4 img"),
-    3: document.querySelectorAll("#galerie-3 img"),
-    2: document.querySelectorAll("#galerie-2 img"),
-    1: document.querySelectorAll("#galerie-1 img"),
-  };
+  
+  function getImgQueryById(galleryId) {
+    return document.querySelectorAll(`#galerie-${galleryId} img`);
+  }
 
   function openFullImg(pic, galleryId) {
     var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
@@ -25,7 +17,7 @@
   
     fullImgBox.style.display = "flex";
     fullImg.src = pic;
-    currentImgIndex = Array.from(galleries[galleryId]).findIndex(
+    currentImgIndex = Array.from(getImgQueryById(galleryId)).findIndex(
       (img) => img.src === pic
     );
     updateNavButtons(galleryId);
@@ -37,7 +29,7 @@
   }
 
   function prevImg(galleryId) {
-    var imgGallery = galleries[galleryId];
+    var imgGallery = getImgQueryById(galleryId);
     if (currentImgIndex > 0) {
       currentImgIndex--;
       var fullImg = document.getElementById(`fullImg${galleryId}`);
@@ -47,7 +39,7 @@
   }
 
   function nextImg(galleryId) {
-    var imgGallery = galleries[galleryId];
+    var imgGallery = getImgQueryById(galleryId);
     if (currentImgIndex < imgGallery.length - 1) {
       currentImgIndex++;
       var fullImg = document.getElementById(`fullImg${galleryId}`);
@@ -57,7 +49,7 @@
   }
 
   function updateNavButtons(galleryId) {
-    var imgGallery = galleries[galleryId];
+    var imgGallery = getImgQueryById(galleryId);
     var prevButton = document.getElementById(`lightBoxPrev${galleryId}`);
     var nextButton = document.getElementById(`lightBoxNext${galleryId}`);
     if (currentImgIndex === 0) {
