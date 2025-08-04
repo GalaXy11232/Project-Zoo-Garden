@@ -32,10 +32,10 @@
 /* Hero Section */
 
 .hero-section {
-  background: url("../images/Cover\ pagina\ principala/Cover site 2025.png")
+  background: url("../images/Cover\ pagina\ principala/Cover_site_2025.png")
     no-repeat center;
   background-size: cover;
-  width: 100%;
+  overflow: hidden;
 }
 
 .hero-section::before {
@@ -65,7 +65,7 @@
 
 @media (max-width: 1000px) {
   .hero-section {
-    background: url("../images/Cover\ pagina\ principala/Cover site tableta 2025.png")
+    background: url("../images/Cover\ pagina\ principala/Cover_site_tableta_2025.png")
       no-repeat center;
   }
 }
