@@ -1,5 +1,9 @@
 @media (max-width: 630px) {
-  #ctcfooter { position: absolute; bottom: 0 !important; width: 100%; }
+  #ctcfooter { 
+    position: absolute;
+    bottom: 0 !important;
+    width: 100%;
+  }
 }
 
 .custom-bg {

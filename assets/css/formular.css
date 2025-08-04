@@ -1,0 +1,27 @@
+.form-container {
+  padding-top: 12rem;
+}
+
+.col {
+  padding-bottom: 0.5rem;
+}
+
+form {
+    padding-top: 0.5rem;
+}
+
+.form-button {
+  background-color: #7b28ae;
+  color: #fff;
+}
+
+.form-button:hover {
+  background-color: #ba12aa;
+  color: #fff;
+}
+
+.form-control:focus {
+  border-color: #7b28ae;
+  box-shadow: 0 0 0 0.2rem rgba(123, 40, 174, 0.35);
+  outline: none;
+}
