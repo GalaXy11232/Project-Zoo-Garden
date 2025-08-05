@@ -110,51 +110,29 @@
   opacity: 1;
 }
 /* Colorarea tabelului */
-
-.platinum .partner-square,
-.gold .partner-square,
-.silver .partner-square {
-  position: relative;
-  overflow: hidden;
-  box-shadow: inset 0 0 6px #ffffff44, 0 0 12px #00000022;
-  z-index: 0;
-}
-
-.platinum .partner-square::before {
-  content: '';
-  position: absolute;
-  top: -25%;
-  left: -25%;
-  width: 142%;
-  height: 142%;
+.platinum .partner-square {
   background: linear-gradient(
     135deg,
     #ffffff 0%,
-    #eeeeee 15%,
-    #d9d9d9 30%,
-    #c8c8c8 50%,
-    #d9d9d9 70%,
-    #eeeeee 85%,
+    #e5e5e5 12.5%,
+    #d9d9d9 25%,
+    #9fb3c7 37.5%,
+    #8a9fb4 50%,
+    #9fb3c7 62.5%,
+    #d9d9d9 75%,
+    #e5e5e5 87.5%,
     #ffffff 100%
   );
-  transition: transform 0.8s ease;
-  z-index: -1;
-  pointer-events: none;
+  background-size: 200% 200%;
+  background-position: 25% 25%;
+  transition: background-position 0.6s ease, all 0.3 ease;
 }
 
-.platinum .partner-square:hover::before,
-.gold .partner-square:hover::before,
-.silver .partner-square:hover::before {
-  transform: rotate(30deg);
+.platinum .partner-square:hover {
+  background-position: 75% 75%;
 }
 
-.gold .partner-square::before {
-  content: '';
-  position: absolute;
-  top: -25%;
-  left: -25%;
-  width: 142%;
-  height: 142%;
+.gold .partner-square {
   background: linear-gradient(
     135deg,
     #fff8dc 0%,
@@ -165,18 +143,16 @@
     #f6e27f 85%,
     #fff8dc 100%
   );
-  transition: transform 0.8s ease;
-  z-index: -1;
-  pointer-events: none;
+  background-size: 200% 200%;
+  background-position: 25% 25%;
+  transition: background-position 0.6s ease, all 0.3 ease;
 }
 
-.silver .partner-square::before {
-  content: '';
-  position: absolute;
-  top: -25%;
-  left: -25%;
-  width: 142%;
-  height: 142%;
+.gold .partner-square:hover {
+  background-position: 75% 75%;
+}
+
+.silver .partner-square {
   background: linear-gradient(
     135deg,
     #eeeeee 0%,
@@ -186,9 +162,13 @@
     #d4d4d4 80%,
     #eeeeee 100%
   );
-  transition: transform 0.8s ease;
-  z-index: -1;
-  pointer-events: none;
+  background-size: 200% 200%;
+  background-position: 25% 25%;
+  transition: background-position 0.6s ease, all 0.3 ease;
+}
+
+.silver .partner-square:hover {
+  background-position: 75% 75%;
 }
 
 .partener-bg-clr .partner-square {
