@@ -1,114 +1,127 @@
+:root {
+  --icon-size: 2.5rem;
+}
+
 footer {
-  background-color: #111;
+  background: linear-gradient(
+    30deg,
+    #00f 0%,
+    #7b28ae 100%
+  );
+  background-size: 200%;
+  background-position: 100% 0%;
 }
 
 .footerContainer {
   width: 100%;
-  padding: 70px 30px 20px;
-}
-
-.socialIcons {
+  height: 25vh;
+  height: 25dvh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: space-evenly; 
 }
 
-.socialIcons {
+.footer-logo {
+  width: 40%;
+  height: 100%;
   display: flex;
-  margin-bottom: 1rem;
+  background-image: url(/assets/images/Branding\ Zenith/Sigla_alb.png);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  align-items: center;
+  justify-content: center;
 }
 
-.socialIcons a {
-  display: inline-block;
-  margin-right: 1rem;
-  text-decoration: none;
-  transition: 0.5s;
+.footer-img {
+  height: 10vh;
+  height: 10dvh;
 }
 
-.socialIcons a .badge {
-  padding: 0.5rem 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  border-radius: 0.25rem;
+.copyright-text {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
 }
 
-.socialIcons a:hover {
-  background-color: #111;
-}
-
-.socialIcons a .bi {
+.copyright-text p {
+  color: #fff;
   font-size: 1.2rem;
 }
 
-.socialIcons a:hover i,
-span {
-  color: #7b28ae;
-  transition: 0.5s;
+.socialIcons {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 5em);
+  row-gap: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1300px) {
   .socialIcons {
-    flex-wrap: wrap;
-    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
-  .socialIcons a {
-    margin-right: 0.5rem;
+  .footer-logo {
+    background-image: url(/assets/images/Branding\ Zenith/Logo_alb.png);
+    background-size: min(50%, 8em);
   }
+}
+
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.socialIcons a:hover {
+  transform: scale(1.2);
+}
+.socialIcons a .bi {
+  font-size: var(--icon-size);
+}
+
+.socialIcons a:link i{
+  color: #f9f;
+}
+
+.socialIcons a:hover i{
+  color: #fff;
+  transition: 0.3s;
+}
+
+.socialIcons a:visited i{
+  color: #f9f;
+}
+
+.linktree-icon {
+  transition: 0.3s;
+  width: var(--icon-size);
+  height: var(--icon-size);
+  background-color: #f9f;
+  mask-image: url('/assets/images/Icons/linktree_logo.png');
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  -webkit-mask-image: url('/assets/images/Icons/linktree_logo.png');
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  -webkit-mask-size: contain;
+}
+
+.linktree-icon img {
+  width: 100%;
+  mix-blend-mode: multiply;
+}
+
+.linktree-icon:hover {
+  background-color: #fff;
 }
 
 @media (max-width: 500px) {
     #ctcftr {position: relative !important; margin-top: 100px;}
     /* .footerContainer {padding-top: 50px;} */
-}
-
-.footerNav {
-  margin: 30px 0;
-}
-
-.footerNav ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none;
-}
-
-.footerNav ul li a {
-  color: white;
-  margin: 20px;
-  text-decoration: none;
-  font-size: 1.3em;
-  opacity: 0.7;
-  transition: 0.5s;
-}
-
-.footerNav ul li a:hover {
-  opacity: 1;
-}
-
-.footerBottom {
-  background-color: #000;
-  padding: 20px;
-  text-align: center;
-}
-
-.footerBottom p {
-  color: white;
-}
-
-.designer {
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  margin: 0px 5px;
-}
-
-@media (max-width: 700px) {
-  .footerNav ul {
-    flex-direction: column;
-  }
-
-  .footerNav ul li {
-    width: 100%;
-    text-align: center;
-    margin: 10px;
-  }
 }

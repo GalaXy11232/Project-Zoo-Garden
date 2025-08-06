@@ -1,3 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .form-container {
   padding-top: 12rem;
 }
@@ -24,4 +35,8 @@ form {
   border-color: #7b28ae;
   box-shadow: 0 0 0 0.2rem rgba(123, 40, 174, 0.35);
   outline: none;
+}
+
+main {
+  flex: 1;
 }
