@@ -67,6 +67,7 @@
   .hero-section {
     background: url("../images/Cover\ pagina\ principala/Cover_site_tableta_2025.png")
       no-repeat center;
+    width: 100vw;
   }
 }
 
@@ -192,6 +193,21 @@
   .container-a .text-about {
     padding-top: 10px;
   }
+}
+/* Video */
+
+.abt-us-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.abt-us-video iframe {
+  width: 55vw;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
 }
 
 /* Branding */
