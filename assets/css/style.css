@@ -59,7 +59,7 @@
     background: url("../images/Cover pagina principala/Cover_site_tableta_2025.png")
       no-repeat center;
     background-size: cover;
-    width: 100vw; /* make sure it spans full width */
+    width: 100%; /* make sure it spans full width */
   }
 
   .hero-section .container {

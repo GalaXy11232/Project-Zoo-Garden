@@ -40,8 +40,9 @@
 
 .img-gallery img {
   max-width: 250px;
-  max-height: 250px;
+  aspect-ratio: 1 / 1;
   cursor: pointer;
+  transition: all 0.3 ease;
 }
 
 .img-gallery img:hover {
@@ -52,7 +53,7 @@
 
 .square-image {
   width: 250px;
-  height: 250px;
+  aspect-ratio: 1 / 1;
   object-fit: cover;
 }
 
