@@ -316,6 +316,9 @@
   text-align: center;
 }
 
+.swiper-3d, .swiper-slide-shadow-left, .swiper-slide-shadow-right
+{ border-radius: 20px !important; }
+
 .obiectiv {
   position: relative;
   width: 100%;
