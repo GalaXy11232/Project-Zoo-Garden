@@ -39,7 +39,7 @@
 }
 
 .hero-section .container {
-  height: 100vh; /* desktop: full viewport height */
+  height: 100vh;
   z-index: 1;
   position: relative;
 }
@@ -59,7 +59,7 @@
     background: url("../images/Cover pagina principala/Cover_site_tableta_2025.png")
       no-repeat center;
     background-size: cover;
-    width: 100%; /* make sure it spans full width */
+    width: 100%;
   }
 
   .hero-section .container {
