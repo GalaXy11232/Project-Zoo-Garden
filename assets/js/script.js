@@ -1,3 +1,10 @@
+//Animatie hero section
+window.addEventListener('load', () => {
+  document.querySelector('.animate-text-on-load').classList.add('animatie-text');
+  document.querySelector('.animate-robot-on-load').classList.add('animatie-robot');
+});
+
+//Targets
 var swiper = new Swiper(".mySwiper", {
   effect: "coverflow",
   grabCursor: true,
