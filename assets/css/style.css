@@ -150,7 +150,7 @@
 .wave2 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
+  width: 100%;
 }
 
 .wave1 .shape-fill,
