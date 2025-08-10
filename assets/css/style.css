@@ -62,9 +62,11 @@
 }
 
 .main-hero {
-  height: 90%;
+  height: 100vh; width: auto;
+  position: relative;
   display: flex;
   flex-direction: row;
+  overflow: hidden;
 }
 
 .animatie-robot {
@@ -113,6 +115,25 @@
     background-size: cover;
     width: 100%;
   }
+}
+
+/* Hexagons */
+.hexagon {
+  position: absolute;
+  bottom: 0;
+  height: 50px; /* adjust to control the size  */
+  aspect-ratio: 1/cos(30deg);
+  clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
+  background: #d1c3e6;
+  z-index: 2;
+  opacity: 0;
+
+  animation: hexAnim 15s infinite ease-in-out;
+}
+
+@keyframes hexAnim {
+  from { transform: scale(1) translate(0, 150%) rotate(0); opacity: .5; }
+  to { transform: scale(1.1) translate(0, -550%) rotate(360deg); opacity: 0; }
 }
 
 /* Waves */
