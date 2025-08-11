@@ -110,7 +110,7 @@
 
 @media (max-width: 1500px) {
   .hero-section {
-    background: url("../images/Cover pagina principala/Cover_site_tableta_2025.png")
+    background: url("/assets/images/Cover pagina principala/hero_img_background.png")
       no-repeat center;
     background-size: cover;
     width: 100%;
@@ -128,12 +128,12 @@
   z-index: 2;
   opacity: 0;
 
-  animation: hexAnim 15s infinite ease-in-out;
+  animation: hexAnim 16s infinite ease-in-out;
 }
 
 @keyframes hexAnim {
-  from { transform: scale(1) translate(0, 150%) rotate(0); opacity: .5; }
-  to { transform: scale(1.1) translate(0, -550%) rotate(360deg); opacity: 0; }
+  from { transform: scale(1) translate(0, 50px) rotate(0); opacity: .5; }
+  to { transform: scale(1.1) translate(0, -500px) rotate(360deg); opacity: 0; }
 }
 
 /* Waves */
@@ -180,11 +180,11 @@
 }
 
 .wave1 svg {
-  animation: wave1Moving 25s infinite;
+  animation: wave1Moving 25s infinite linear;
 }
 
 .wave2 svg {
-  animation: wave2Moving 25s infinite;
+  animation: wave2Moving 25s infinite linear;
 }
 
 /* I'm a */
