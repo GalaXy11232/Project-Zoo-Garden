@@ -1,3 +1,7 @@
+/* Font overrides */
+body { font-family: 'Prompt', sans-serif; }
+h1, h2, h3 { font-family: 'Robo Mono', monospace; }
+
 .custom-bg {
   background-color: #d1c3e6;
 }
@@ -90,7 +94,6 @@
   width: 40%;
   height: 100%;
   color: #fff;
-  font-family: 'Prompt';
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -100,6 +103,12 @@
 .animatie-text h1 {
   font-size: 4em;
   margin: 0;
+}
+
+.animate-text-on-load h1 {
+  text-align: center; 
+  font-family: 'Prompt', sans-serif !important;
+  font-style: normal;
 }
 
 .span-h {
@@ -446,13 +455,15 @@
   padding-bottom: 50px;
   justify-content: center;
   align-items: center;
+  height: 400px;
 }
 
 .obiectiv .titlu {
-  font-size: 35px;
+  font-size: 28px;
   font-weight: bold;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   color: #d1c3e6;
+  text-align: center;
 }
 
 .obiectiv .paragraf {
