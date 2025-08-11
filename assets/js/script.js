@@ -25,9 +25,9 @@ var swiper = new Swiper(".mySwiper", {
 
 //Dynamic content
 const plansData = [
-    { title: "FTC #9 (2024-2025)", description: "Ne pregătim pentru a participa la FIRST Tech Challenge în sezonul 9 din 2024-2025. Vom avea o echipă organizată eficient, alcătuită din membri specializați în diferite domenii și ne propunem să ne calificăm la etapa națională a competiției prin câștigarea unui premiu." },
-    { title: "ONCS 2025", description: "În anul școlar 2024-2025 vom participa la Olimpiada Națională de Creativitate Ştiinţifică cu diferite proiecte care pun în valoare aplicabilitatea excelentă a roboticii în diferite domenii. Acest concurs național ne oferă oportunitatea de a evidenția talentul membrilor noștri și ne propunem să ne calificăm la etapa națională." },
-    { title: "InfoEducație 2025", description: "Pentru următorul an, avem în plan participarea pe mai multe secțiuni în cadrul concursului InfoEducație, unde putem pune în valoare abilitățile digitale și tehnologice diverse ale membrilor clubului nostru." },
+    { title: "FTC #10 (2025-2026)", description: "Ne pregătim pentru a participa la FIRST Tech Challenge în sezonul 10 din 2025-2026. Vom avea o echipă organizată eficient, alcătuită din membri specializați în diferite domenii și ne propunem să ne calificăm la etapa națională a competiției prin câștigarea unui premiu." },
+    { title: "ONCS 2026", description: "În anul școlar 2025-2026 vom participa la Olimpiada Națională de Creativitate Ştiinţifică cu diferite proiecte care pun în valoare aplicabilitatea excelentă a roboticii în diferite domenii. Acest concurs național ne oferă oportunitatea de a evidenția talentul membrilor noștri și ne propunem să ne calificăm la etapa națională." },
+    { title: "InfoEducație 2026", description: "Pentru următorul an, avem în plan participarea pe mai multe secțiuni în cadrul concursului InfoEducație, unde putem pune în valoare abilitățile digitale și tehnologice diverse ale membrilor clubului nostru." },
 ];
 
 function generateDynamicContent() {
