@@ -90,7 +90,12 @@ h1, h2, h3 { font-family: 'Robo Mono', monospace; }
   height: 60%;
 }
 
+.animate-text-on-load {
+  opacity: 0;
+}
+
 .animatie-text {
+  opacity: 1;
   width: 40%;
   height: 100%;
   color: #fff;

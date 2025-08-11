@@ -45,6 +45,7 @@ body {
   justify-content: center;
   flex-direction: column;
   padding: 50px;
+  padding-top: 7rem;
 }
 
 .blog-heading {

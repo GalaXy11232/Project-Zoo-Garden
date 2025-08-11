@@ -23,8 +23,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-
-
+//Dynamic content
 const plansData = [
     { title: "FTC #9 (2024-2025)", description: "Ne pregătim pentru a participa la FIRST Tech Challenge în sezonul 9 din 2024-2025. Vom avea o echipă organizată eficient, alcătuită din membri specializați în diferite domenii și ne propunem să ne calificăm la etapa națională a competiției prin câștigarea unui premiu." },
     { title: "ONCS 2025", description: "În anul școlar 2024-2025 vom participa la Olimpiada Națională de Creativitate Ştiinţifică cu diferite proiecte care pun în valoare aplicabilitatea excelentă a roboticii în diferite domenii. Acest concurs național ne oferă oportunitatea de a evidenția talentul membrilor noștri și ne propunem să ne calificăm la etapa națională." },
@@ -49,6 +48,7 @@ function generateDynamicContent() {
   generateDynamicContent();
 
 //Eliminare navbar
+/*
 const navbar = document.querySelector('.navbar');
 const navbarPlaceholder = document.createElement('div');
 navbarPlaceholder.style.height = `${navbar.offsetHeight}px`;
@@ -76,3 +76,4 @@ function navbar_function(){
     }
   }
 }
+*/
