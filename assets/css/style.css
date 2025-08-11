@@ -1,10 +1,11 @@
 /* Font overrides */
 body { font-family: 'Prompt', sans-serif; }
-h1, h2, h3 { font-family: 'Robo Mono', monospace; }
+h1, h2, h3 { font-family: 'Prompt', monospace; }
 
 .custom-bg {
   background-color: #d1c3e6;
 }
+
 
 /* Titlu */
 
