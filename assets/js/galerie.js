@@ -10,8 +10,8 @@
     var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
     var fullImg = document.getElementById(`fullImg${galleryId}`);
   
-    fullImg.style.maxWidth = "80%";
-    fullImg.style.maxHeight = "80%";
+    fullImg.style.maxWidth = "70%";
+    fullImg.style.maxHeight = "70%";
     fullImg.style.width = "auto";
     fullImg.style.height = "auto";
   
