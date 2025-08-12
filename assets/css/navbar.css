@@ -45,6 +45,62 @@
   width: 150px;
 }
 
+/* Collapsed navbar */
+
+.offcanvas {
+  background: transparent;
+  margin: 1em;
+}
+
+.offcanvas-backdrop {
+  margin-top: 5em;
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    transparent 100%
+  );
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  border: solid 1px #fff;
+  border-radius: 1em;
+  transition: opacity 0.5s ease;
+  height: max(30dvh, 22em);
+  width: calc(100vw - 2.5em);
+}
+
+.offcanvas-backdrop.show {
+  opacity: 1;
+  transition: all 0.8 ease;
+}
+
+.offcanvas-header {
+  opacity: 0;
+  background: transparent;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#offcanvasNavbar {
+  border: none;  
+}
+
+.offcanvas-body {
+  padding-bottom: max(calc(50dvh - 4rem), 20rem);
+
+  overflow: visible;
+  position: relative;
+}
+
+.offcanvas-body ul {
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Media query */
+
 @media (min-width: 991px) {
   .nav-link::before {
     content: "";

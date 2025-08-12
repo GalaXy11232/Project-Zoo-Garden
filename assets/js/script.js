@@ -47,33 +47,25 @@ function generateDynamicContent() {
 
   generateDynamicContent();
 
-//Eliminare navbar
-/*
-const navbar = document.querySelector('.navbar');
-const navbarPlaceholder = document.createElement('div');
-navbarPlaceholder.style.height = `${navbar.offsetHeight}px`;
-navbarPlaceholder.style.display = 'none';
+//Modal navbar
+const modal = document.getElementById("modal");
 
-window.addEventListener("scroll", navbar_function);
-
-function navbar_function(){
-  if(window.scrollY <= 600){
-    if (!navbar.classList.contains('fixed-top')) {
-      navbarPlaceholder.style.display = 'block';
-      navbar.classList.add('fixed-top');
-//       window.scrollTo({
-//         top: window.scrollY - 100,
-//       });
+modal.addEventListener("shown.bs.modal", () => {
+  for (let sheet of document.styleSheets) {
+    for (let rule of sheet.cssRules) {
+      if (rule.selectorText === ".offcanvas-backdrop.show") {
+        rule.style.opacity = "1";
+      }
     }
   }
-  else{
-    if (navbar.classList.contains('fixed-top')) {
-      navbarPlaceholder.style.display = 'none';
-      navbar.classList.remove('fixed-top');
-//       window.scrollTo({
-//         top: window.scrollY + 100,
-//       });
+});
+
+modal.addEventListener("hidden.bs.modal", () => {
+  for (let sheet of document.styleSheets) {
+    for (let rule of sheet.cssRules) {
+      if (rule.selectorText === ".offcanvas-backdrop.show") {
+        rule.style.opacity = "0";
+      }
     }
   }
-}
-*/
+});
