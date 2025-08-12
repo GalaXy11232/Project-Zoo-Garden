@@ -10,6 +10,7 @@
     var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
     var fullImg = document.getElementById(`fullImg${galleryId}`);
   
+    fullImg.style.paddingTop = "7em";
     fullImg.style.maxWidth = "70%";
     fullImg.style.maxHeight = "70%";
     fullImg.style.width = "auto";
