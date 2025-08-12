@@ -10,18 +10,30 @@
     var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
     var fullImg = document.getElementById(`fullImg${galleryId}`);
   
-    fullImg.style.paddingTop = "7em";
+    fullImg.style.marginTop = "7em";
     fullImg.style.maxWidth = "70%";
     fullImg.style.maxHeight = "70%";
     fullImg.style.width = "auto";
     fullImg.style.height = "auto";
-  
+
     fullImgBox.style.display = "flex";
     fullImg.src = pic;
     currentImgIndex = Array.from(getImgQueryById(galleryId)).findIndex(
       (img) => img.src === pic
     );
     updateNavButtons(galleryId);
+
+    document.addEventListener("keyup", (e) => {
+      if (e.code === "Escape") {
+        closeFullImg(galleryId);
+      }
+    });
+
+    fullImgBox.addEventListener("click", (event) => {
+      if (!fullImg.contains(event.target)) {
+        closeFullImg(galleryId);
+      }
+    });
   }
 
   function closeFullImg(galleryId) {
