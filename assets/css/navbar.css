@@ -50,6 +50,7 @@
 .offcanvas {
   background: transparent;
   margin: 1em;
+  width: calc(100vw - 2.5em);
 }
 
 .offcanvas-backdrop {
@@ -78,16 +79,17 @@
   opacity: 0;
   background: transparent;
   display: flex;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 
 #offcanvasNavbar {
-  border: none;  
+  border: none;
+  width: calc(100vw - 2.5em);
 }
 
 .offcanvas-body {
   padding-bottom: max(calc(50dvh - 4rem), 20rem);
-
   overflow: visible;
   position: relative;
 }
@@ -96,6 +98,7 @@
   height: auto;
   position: absolute;
   top: 50%;
+  left: 6em;
   transform: translateY(-50%);
 }
 
@@ -119,5 +122,10 @@
   .nav-link.active::before {
     width: 100%;
     visibility: visible;
+  }
+
+  .offcanvas-body ul {
+    right: 0px;
+    left: auto;
   }
 }
