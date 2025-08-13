@@ -1,10 +1,4 @@
-:root {
-  --primary: #7b28ae;
-  --primary-gradient: linear-gradient(to right, #7b28ae, #ba12aa);
-  --bg-light: #d1c3e6;
-}
-
-.custom-bg, .main, .timeline, .container-r ul li {
+.main, .timeline, .container-r ul li {
   background-color: var(--bg-light);
 }
 

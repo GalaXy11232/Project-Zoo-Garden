@@ -3,10 +3,6 @@
   padding: 0px;
 }
 
-.custom-bg {
-  background: #d1c3e6;
-}
-
 a {
   text-decoration: none;
 }
@@ -18,25 +14,6 @@ ul {
 body {
   margin: 0px;
   padding: 0px;
-}
-
-.custom-span {
-  font-size: 35px;
-  font-weight: 600;
-  color: #7b28ae;
-  position: relative;
-  margin-bottom: 50px;
-}
-
-.custom-span::after {
-  position: absolute;
-  content: " ";
-  width: 50%;
-  height: 4px;
-  left: 50%;
-  bottom: -5px;
-  background-image: linear-gradient(to right, #7b28ae, #ba12aa);
-  transform: translateX(-50%);
 }
 
 #blog {
@@ -97,7 +74,7 @@ body {
 }
 
 .blog-text .custom-span {
-  color: #7b28ae;
+  color: var(--primary);
   font-size: 0.9rem;
 }
 
@@ -108,7 +85,7 @@ body {
 }
 
 .blog-text .blog-title:hover {
-  color: #7b28ae;
+  color: var(--primary);
   transition: all ease 0.3s;
 }
 
@@ -125,7 +102,7 @@ body {
 }
 
 .blog-text a:hover {
-  color: #7b28ae;
+  color: var(--primary);
   transition: all ease 0.3s;
 }
 
@@ -137,7 +114,7 @@ body {
 }
 
 .read-more-btn {
-  color: #7b28ae;
+  color: var(--primary);
   cursor: pointer;
 }
 
