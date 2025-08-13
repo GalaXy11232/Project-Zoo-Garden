@@ -1,24 +1,23 @@
+:root {
+  --primary: #7b28ae;
+  --bg-light: #d1c3e6;
+  --primary-gradient: linear-gradient(to right, #7b28ae, #ba12aa);
+}
+
 /* Font overrides */
 body { font-family: 'Prompt', sans-serif; }
 h1, h2, h3 { font-family: 'Prompt', monospace; }
 
+/* Chestii generale */
+
 .custom-bg {
-  background-color: #d1c3e6;
-}
-
-
-/* Titlu */
-
-.section-title {
-  text-align: center;
-  margin-bottom: 30px;
-  padding-top: 50px;
+  background-color: var(--bg-light);
 }
 
 .custom-span {
-  font-size: 35px;
+  font-size: clamp(25px, 2.5vw + 1rem, 34px);
   font-weight: 600;
-  color: #7b28ae;
+  color: var(--primary);
   position: relative;
   margin-bottom: 80px;
 }
@@ -30,9 +29,18 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   height: 4px;
   left: 50%;
   bottom: -5px;
-  background-image: linear-gradient(to right, #7b28ae, #ba12aa);
+  background-image: var(--primary-gradient);
   transform: translateX(-50%);
 }
+
+/* Titlu */
+.section-title {
+  text-align: center;
+  margin-bottom: 30px;
+  padding-top: 50px;
+}
+
+
 
 /* Hero Section */
 
@@ -121,7 +129,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
 }
 
 .span-h {
-  color: #7b28ae;
+  color: var(--primary);
   font-size: 60px;
   font-weight: 600;
 }
@@ -160,7 +168,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   height: 50px; /* adjust to control the size  */
   aspect-ratio: 1/cos(30deg);
   clip-path: polygon(50% -50%,100% 50%,50% 150%,0 50%);
-  background: #d1c3e6;
+  background: var(--bg-light);
   z-index: 2;
   opacity: 0;
 
@@ -213,7 +221,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
 
 .wave1 .shape-fill,
 .wave2 .shape-fill  {
-  fill: #D1C3E6;
+  fill: var(--bg-light);
 }
 
 .wave1 svg {
@@ -247,7 +255,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   margin-left: 15px;
   line-height: 90px;
   height: 90px;
-  background: #d1c3e6;
+  background: var(--bg-light);
   overflow: hidden;
 }
 
@@ -275,8 +283,8 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: #d1c3e6;
-  border-left: 2px solid #7b28ae;
+  background-color: var(--bg-light);
+  border-left: 2px solid var(--primary);
   animation: typing 3s steps(22) infinite;
 }
 
@@ -367,7 +375,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(100deg, #7b28ae, #ba12aa, #7b28ae);
+  background: linear-gradient(100deg, var(--primary), #ba12aa, var(--primary));
   background-size: 200% 200%;
   animation: gradientMove 15s infinite;
   padding: 0.3em;
@@ -450,7 +458,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #d1c3e6;
+  background: var(--bg-light);
   padding-bottom: 20px;
 }
 
@@ -461,7 +469,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
 }
 
 .swiper-slide {
-  background-color: #7b28ae;
+  background-color: var(--primary);
   background-position: center;
   background-size: cover;
   width: 320px;
@@ -472,8 +480,11 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   text-align: center;
 }
 
-.swiper-3d, .swiper-slide-shadow-left, .swiper-slide-shadow-right
-{ border-radius: 20px !important; }
+.swiper-3d,
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  border-radius: 20px !important;
+}
 
 .obiectiv {
   position: relative;
@@ -490,17 +501,17 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 40px;
-  color: #d1c3e6;
+  color: var(--bg-light);
   text-align: center;
 }
 
 .obiectiv .paragraf {
-  color: #d1c3e6;
+  color: var(--bg-light);
 }
 
 .title {
   text-align: center;
-  background: #d1c3e6;
+  background: var(--bg-light);
 }
 
 .rounded-pill {
@@ -533,7 +544,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
 }
 
 .container-p .box-container .box h3 {
-  color: #7b28ae;
+  color: var(--primary);
   font-size: 30px;
   padding: 10px 0;
   padding-bottom: 30px;
@@ -548,7 +559,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
 .container-p .box-container .box:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
-  background: #7b28ae;
+  background: var(--primary);
   transition: all ease 0.3s;
 }
 
