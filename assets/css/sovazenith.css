@@ -21,9 +21,9 @@
 .slowzmin { animation: slowzoomin 1s ease-in-out forwards; }
 
 @keyframes goup {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-25px); opacity: 1;}
-    100%{ transform: translateX(100vw); opacity: 0;}
+    0% { transform: translateY(0); }
+    20% { transform: translateY(25px); opacity: 1;}
+    100%{ transform: translateY(-60dvh); opacity: 0;}
 }
 .up { animation: goup 1.3s ease forwards; }
 
