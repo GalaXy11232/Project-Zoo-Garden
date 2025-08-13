@@ -102,7 +102,7 @@
   transform: translateY(-50%);
 }
 
-/* Media query */
+/* BIG NAVBAR */
 
 @media (min-width: 991px) {
   .nav-link::before {

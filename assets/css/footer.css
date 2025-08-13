@@ -58,12 +58,14 @@ footer {
 
 @media (max-width: 1300px) {
   .footerContainer {
-    height: 15vh;
+    height: 24vh;
   }
+
   .socialIcons {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+
   .footer-logo {
     background-image: url(/assets/images/Branding\ Zenith/Logo_alb.png);
     background-size: max(20%, 6em);
