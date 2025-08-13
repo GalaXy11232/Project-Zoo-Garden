@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="assets/css/footer.css" />
     <link rel="stylesheet" href="assets/css/bttb.css" />
     <link rel="stylesheet" href="assets/css/scroll-bar.css" />
+    <link rel="stylesheet" href="assets/css/sovazenith.css" />
     <link
       rel="shortcut icon"
       href="assets/images/about.png"
@@ -236,7 +237,56 @@
             Povestea noastră începe în anul 2020, când, un grup de tineri din clasele a X-a și a XI-a de la Colegiul Național „Grigore Moisil” au înființat, cu ajutorul profesorului nostru coordonator, doamna profesor de fizică Mihaela Garabet, echipa SovaTech. Anii au trecut, iar membrii care au adus inițiativa de a se dezvolta în domeniul STEAM au devenit mentori, lăsând în urma lor o nouă generație care să perpetueze activitatea clubului. Noua generație, învăţând din greşelile seriei anterioare, a făcut un pas mai departe, aducând o nouă viziune în club și, astfel, şi-a propus să se reinventeze sub numele Zenith.
           </p>
         </div>
-        <div class="images">
+        <div class = 'tranzit-wrapper'>
+        
+            <div class = 'actual' id = 'fin'> 
+                <div id = 'sova' class = 'flx' style = 'transform: translateX(-50vw);'> 
+                    <img style = 'width: max(100px, 100%) !important; height: auto;'
+                        src = "assets/images/Branding Zenith/Sigla_SovaTech.png"
+                        alt = "SovaTech"
+                        width = '1080' height = '1080'
+                    >
+                </div>
+                
+                <div class = 'flx lerpX'>
+                    <img style = 'transform: scale(0);' 
+                        id = 'arrow'
+                        src = 'assets/images/sagetoasa.png'
+                        alt = 'arr'
+                        width = '500' height = '500'
+                    >
+                </div>
+                
+                <div id = 'zen' class = 'flx' style = 'transform: translateX(50vw);'> 
+                    <img style = 'width: max(100px, 100%) !important; height: auto;'
+                        src = "assets/images/Branding Zenith/Sigla_mov.png"
+                        alt = "zenit"
+                        width = '1080' height = '1080'
+                    >
+                </div>
+            </div>
+
+            
+            <div class = 'transitionwhitescreen'></div>
+                <div id = 'rpp' class = 'insidewrapper'>
+                    <!-- num of squares -->
+                    <div></div> <div></div>
+                    <div></div> <div></div>
+                    <div></div> <div></div>
+                </div>
+
+                <div class = 'insidewrapper'>
+                    <img style = 'width: min(70%, 500px); height: auto; '
+                        src = "assets/images/Branding Zenith/Sigla_SovaTech.png"
+                        alt = "SovaTech"
+                        width = '1080' height = '1080'
+                        class = 'soy'
+                    >
+                </div>
+        </div>
+
+        <button onclick = 'seeanimationagain()'>Vezi animația din nou</button>
+        <!-- <div class="images">
           <img
             class="image-1"
             src="assets/images/Branding Zenith/Sigla_SovaTech.png"
@@ -248,7 +298,7 @@
             src="assets/images/Branding Zenith/Sigla_mov.png"
             alt=""
           />
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -412,5 +462,6 @@
     <script src="assets/js/script.js" defer></script>
     <script src="./assets/js/bttb.js"></script>
     <script src="./assets/js/hexagoane.js"></script>
+    <script src="./assets/js/sovazenith.js"></script>
   </body>
 </html>
