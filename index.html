@@ -38,15 +38,16 @@
     
     <title>ZENITH</title>
   </head>
-  <body class="custom-bg" id="top">
+  <body class="custom-bg" id="top" data-bs-theme="light">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand me-auto" href="."
-          ><img
+        <a class="navbar-brand me-auto" href=".">
+          <img
             class="imagine-navbar"
             src="assets/images/Branding Zenith/Sigla_mov.png"
-        /></a>
+          />
+        </a>
         <div
           class="offcanvas offcanvas-end"
           tabindex="-1"
@@ -94,6 +95,11 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="formular.html">Contact</a>
+              </li>
+              <li>
+                <button id="theme-toggle" class="btn btn-outline-secondary btn-sm" aria-label="Toggle dark mode">
+                  <i id="theme-icon" class="bi bi-moon"></i>
+                </button>
               </li>
             </ul>
           </div>
@@ -184,6 +190,7 @@
         </div>
       </div>
     </section>
+    
     <!-- Mission -->
     <section class="about-us">
       <div class="container-a">
@@ -459,7 +466,8 @@
     ></script>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/script.js" defer></script>
+
+    <script src="./assets/js/script.js"></script>
     <script src="./assets/js/bttb.js"></script>
     <script src="./assets/js/hexagoane.js"></script>
     <script src="./assets/js/sovazenith.js"></script>

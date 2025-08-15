@@ -4,7 +4,16 @@
   --primary-gradient: linear-gradient(to right, #7b28ae, #ba12aa);
 }
 
+/* Dark mode */
+
+.dark {
+  --primary: #d1c3e6;
+  --bg-light: #7b28ae;
+  --primary-gradient: linear-gradient(to right, #ba12aa, #d1c3e6);
+}
+
 /* Font overrides */
+
 body { font-family: 'Prompt', sans-serif; }
 h1, h2, h3 { font-family: 'Prompt', monospace; }
 
@@ -12,6 +21,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
 
 .custom-bg {
   background-color: var(--bg-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .custom-span {
@@ -39,8 +49,6 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   margin-bottom: 30px;
   padding-top: 50px;
 }
-
-
 
 /* Hero Section */
 

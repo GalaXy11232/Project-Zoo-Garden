@@ -69,3 +69,27 @@ modal.addEventListener("hidden.bs.modal", () => {
     }
   }
 });
+
+//Dark mode
+const btn = document.getElementById("theme-toggle");
+const icon = document.getElementById("theme-icon");
+const root = document.body;
+
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme) {
+  root.setAttribute("data-bs-theme", savedTheme);
+  icon.className = savedTheme === "dark" ? "bi bi-sun" : "bi bi-moon";
+} else {
+  const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  root.setAttribute("data-bs-theme", prefersDark ? "dark" : "light");
+  icon.className = prefersDark ? "bi bi-sun" : "bi bi-moon";
+}
+
+btn.addEventListener("click", () => {
+  console.log("nigger");
+  const currentTheme = root.getAttribute("data-bs-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  root.setAttribute("data-bs-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
+  icon.className = newTheme === "dark" ? "bi bi-sun" : "bi bi-moon";
+});
