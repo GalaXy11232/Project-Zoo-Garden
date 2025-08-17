@@ -12,6 +12,10 @@
   --primary-gradient: linear-gradient(to right, #ba12aa, #d1c3e6);
 }
 
+#theme-toggle {
+  margin-top: 0.4em;
+}
+
 /* Font overrides */
 
 body { font-family: 'Prompt', sans-serif; }

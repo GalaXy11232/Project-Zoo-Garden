@@ -97,8 +97,8 @@
 .offcanvas-body ul {
   height: auto;
   position: absolute;
-  top: 50%;
-  left: 6em;
+  top: calc(50% + 1em);
+  left: 4em;
   transform: translateY(-50%);
 }
 
@@ -125,6 +125,7 @@
   }
 
   .offcanvas-body ul {
+    top: 50%;
     right: 0px;
     left: auto;
   }
