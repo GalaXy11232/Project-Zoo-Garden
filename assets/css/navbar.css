@@ -57,7 +57,7 @@
   margin-top: 5em;
   background: linear-gradient(
     90deg,
-    var(--light-text-color) 0%,
+    #fff 0%,
     transparent 100%
   );
   filter: blur(2px);
@@ -97,7 +97,7 @@
 .offcanvas-body ul {
   height: auto;
   position: absolute;
-  top: calc(50% + 1em);
+  top: 50%;
   left: 4em;
   transform: translateY(-50%);
 }
