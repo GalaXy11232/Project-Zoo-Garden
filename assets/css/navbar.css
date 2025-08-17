@@ -30,14 +30,14 @@
 }
 
 .nav-link {
-  color: #666777;
+  color: #000;
   font-weight: 500;
   position: relative;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: #000;
+  color: var(--primary);
 }
 
 .imagine-navbar {
@@ -57,13 +57,13 @@
   margin-top: 5em;
   background: linear-gradient(
     90deg,
-    #fff 0%,
+    var(--light-text-color) 0%,
     transparent 100%
   );
   filter: blur(2px);
   -webkit-filter: blur(2px);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  border: solid 1px #fff;
+  border: solid 1px var(--light-text-color);
   border-radius: 1em;
   transition: opacity 0.5s ease;
   height: max(30dvh, 22em);
@@ -113,7 +113,7 @@
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: var(--primary);
+    background-color: #7b28ae; /* Nu se modifica */
     visibility: hidden;
     transition: 0.3s ease-in-out;
   }

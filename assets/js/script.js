@@ -69,11 +69,3 @@ modal.addEventListener("hidden.bs.modal", () => {
     }
   }
 });
-
-//Dark mode
-const btn = document.getElementById("theme-toggle");
-const bg = document.getElementsByClassName("custom-bg");
-
-btn.addEventListener("click", function(event) {
-  console.log("BRUH");
-});

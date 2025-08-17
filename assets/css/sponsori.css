@@ -74,7 +74,7 @@
 .grid-link {
   width: 100%;
   text-align: center;
-  color:var(--primary);
+  color: #7b28ae;
   font-size: min(1.5rem, 10vw);
   text-decoration: none;
   position: absolute;
@@ -87,7 +87,7 @@
 
 .partner-square:hover .grid-link:hover,
 .partner-square:hover .grid-link:active {
-  color:var(--primary);
+  color: #7b28ae;
   text-decoration: underline;
 }
 

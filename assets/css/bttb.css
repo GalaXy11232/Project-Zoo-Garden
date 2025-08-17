@@ -1,90 +1,3 @@
-/* #back-to-top-btn {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  font-size: 26px;
-  width: 50px;
-  height: 50px;
-  background-color: #7b28ae;
-  color: #fff;
-  cursor: pointer;
-  outline: none;
-  border: 3px solid #fff;
-  border-radius: 50%;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-  transition-property: background-color, color;
-  z-index: 99;
-}
-
-#back-to-top-btn:hover,
-#back-to-top-btn:focus {
-  background-color: #fff;
-  color: #7b28ae;
-  border: 3px solid #7b28ae;
-}
-
-@media (max-width: 992px) {
-  #back-to-top-btn {
-    font-size: 22px;
-    width: 40px;
-    height: 40px;
-  }
-}
-
-@media (max-width: 768px) {
-  #back-to-top-btn {
-    font-size: 15px;
-    width: 30px;
-    height: 30px;
-    right: 10px;
-  }
-}
-
-@media (max-width: 550px) {
-  #back-to-top-btn {
-    font-size: 14px;
-    width: 30px;
-    height: 30px;
-    bottom: 10px;
-    right: 3px;
-  }
-}
-
-
-.btnEntrance {
-  animation-duration: 0.5s;
-  animation-fill-mode: both;
-  animation-name: btnEntrance;
-}
-
-@keyframes btnEntrance {
-  from {
-    opacity: 0;
-    transform: scale3d(0.3, 0.3, 0.3);
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-.btnExit {
-  animation-duration: 0.25s;
-  animation-fill-mode: both;
-  animation-name: btnExit;
-}
-
-@keyframes btnExit {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-    transform: translate3d(0, 100%, 0);
-  }
-} */
-
 html {
   scroll-behavior: smooth;
 }
@@ -110,12 +23,12 @@ html {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
-  background-color: #fff;
+  background-color: #d1c3e6;
   border-radius: 50%;
   display: grid;
   place-items: center;
   font-size: 25px;
-  color: var(--primary);
+  color: #7b28ae;
 }
 
 .btnEntrance {
