@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style = "scroll-behavior: smooth;">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -124,110 +124,146 @@
       </div>
     </section>
 
+    <section>
+      <div style = 'display: flex; justify-content: space-evenly; align-items: center; flex-wrap: wrap; gap: 1em;'>
+        <a class = 'selection-link' href = '#membri'>Membri</a>
+        <a class = 'selection-link' href = '#voluntari'>Voluntari</a>
+        <a class = 'selection-link' href = '#mentori'>Mentori</a>
+      </div>
+    </section>
+
     <!-- Echipa -->
-    <div class="team-area">
+    <div id = 'membri' class="team-area">
       <div class="section-title">
         <span class="custom-span"> Membrii echipei </span>
       </div>
       <div class="item-links">
-        <span class="item-link menu-active" data-name="all">Toți membrii</span>
-        <span class="item-link" data-name="mecanica">Mecanică</span>
-        <span class="item-link" data-name="programare">Programare</span>
-        <span class="item-link" data-name="grafica">PR & Marketing</span>
-        <span class="item-link" data-name="pr">Grafică</span>
+        <span class="item-link item-membru menu-active" data-name="all">Toți membrii</span>
+        <span class="item-link item-membru" data-name="mecanica">Mecanică</span>
+        <span class="item-link item-membru" data-name="programare">Programare</span>
+        <span class="item-link item-membru" data-name="grafica">PR & Marketing</span>
+        <span class="item-link item-membru" data-name="pr">Grafică</span>
       </div>
 
       <!-- !!! data-name trebuie sa fie exact ca cele de aici de sus !!! -->
       <div class="team-box">
         <!-- Membru 1 -->
-        <div class="box" data-name="mecanica">
-          <img src="assets/images/Membri/Ioana Preda.JPG" alt="" />
-          <h2>Ioana Preda</h2>
-          <span>Team leader, membru Mecanică</span>
-        </div>
-        <!-- Membru 2 -->
-        <div class="box" data-name="mecanica">
-          <img src="assets/images/Membri/Serghei Țirulnic.JPG" alt="" />
-          <h2>Serghei Țirulnic</h2>
-          <span>Lider Mecanică</span>
-        </div>
-        <!-- Membru 3 -->
-        <div class="box" data-name="mecanica">
-          <img src="assets/images/Membri/Ionuț Ghiță.JPG" alt="" />
-          <h2>Ionuț Ghiță</h2>
-          <span>Mecanică</span>
-        </div>
-        <!-- Membru 4 -->
-        <div class="box" data-name="mecanica">
+        <div class="box box-membru" data-name="mecanica">
           <img src="assets/images/Membri/Lucian Bobîrsc.JPG" alt="" />
           <h2>Lucian Bobîrsc</h2>
-          <span>Mecanică</span>
+          <span>Lider Mecanică</span>
         </div>
-        <!-- Membru 5 -->
-        <div class="box" data-name="mecanica">
+        <!-- Membru 2 -->
+        <div class="box box-membru" data-name="mecanica">
           <img src="assets/images/Membri/Matei Neamțu.JPG" alt="" />
           <h2>Matei Neamțu</h2>
           <span>Mecanică</span>
         </div>
-        <!-- Membru 6 -->
-        <div class="box" data-name="mecanica">
+        <!-- Membru 3 -->
+        <div class="box box-membru" data-name="mecanica">
           <img src="assets/images/Membri/Alex Velea.JPG" alt="" />
           <h2>Alex Velea</h2>
           <span>Mecanică</span>
         </div>
-        <!-- Membru 7 -->
-        <div class="box" data-name="mecanica">
+        <!-- Membru 4 -->
+        <div class="box box-membru" data-name="mecanica">
           <img src="assets/images/Membri/Călin Tudor.JPG" alt="" />
           <h2>Călin Tudor</h2>
           <span>Mecanică</span>
         </div>
-        <!-- Membru 8 -->
-        <div class="box" data-name="mecanica">
+        <!-- Membru 5 -->
+        <div class="box box-membru" data-name="mecanica">
           <img src="assets/images/Membri/Robert Ciocan.JPG" alt="" />
           <h2>Robert Ciocan </h2>
           <span>Mecanică</span>
         </div>
-        <!-- Membru 9 -->
-        <div class="box" data-name="programare">
-          <img src="assets/images/Membri/Călin Crânguș.JPG" alt="" />
-          <h2>Călin Crânguș</h2>
-          <span>Lider Programare</span>
-        </div>
-        <!-- Membru 10 -->
-        <div class="box" data-name="programare">
+        <!-- Membru 6 -->
+        <div class="box box-membru" data-name="programare">
           <img src="assets/images/Membri/Bogdan Grecu.JPG" alt="" />
           <h2>Bogdan Grecu</h2>
-          <span>Programare</span>
+          <span>Lider Programare</span>
         </div>
-        <!-- Membru 11 -->
-        <div class="box" data-name="grafica">
+        <!-- Membru 7 -->
+        <div class="box box-membru" data-name="grafica">
           <img src="assets/images/Membri/Irina Nicolescu.JPG" alt="" />
           <h2>Irina Nicolescu</h2>
           <span>Lider PR & Marketing</span>
         </div>
-        <!-- Membru 12 -->
-        <div class="box" data-name="grafica">
+        <!-- Membru 8 -->
+        <div class="box box-membru" data-name="grafica">
           <img src="assets/images/Membri/Catinca Drăghiescu.JPG" alt="" />
           <h2>Catinca Drăghiescu</h2>
           <span>PR & Marketing</span>
         </div>
-        <!-- Membru 13 -->
-        <div class="box" data-name="grafica">
+        <!-- Membru 9 -->
+        <div class="box box-membru" data-name="grafica">
           <img src="assets/images/Membri/Denisa Ionescu.JPG" alt="" />
           <h2>Denisa Ionescu</h2>
           <span>PR & Marketing</span>
         </div>
-        <!-- Membru 14 -->
-        <div class="box" data-name="pr">
+        <!-- Membru 10 -->
+        <div class="box box-membru" data-name="pr">
           <img src="assets/images/Membri/Iasmina Petcu.JPG" alt="" />
           <h2>Iasmina Petcu</h2>
           <span>Lider Grafică</span>
         </div>
-        <!-- Membru 15 -->
-        <div class="box" data-name="pr">
+        <!-- Membru 11 -->
+        <div class="box box-membru" data-name="pr">
           <img src="assets/images/Membri/Maria Răducanu.JPG" alt="" />
           <h2>Maria Răducanu</h2>
           <span>Grafică</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Voluntari -->
+    <div id = 'voluntari' class="team-area">
+      <div class="section-title">
+        <span class="custom-span"> Voluntarii echipei </span>
+      </div>
+      <div class="item-links">
+        <span class="item-link item-voluntar menu-active" data-name="all-v">Toți membrii</span>
+        <span class="item-link item-voluntar" data-name="mecanica-v">Mecanică</span>
+        <span class="item-link item-voluntar" data-name="programare-v">Programare</span>
+        <span class="item-link item-voluntar" data-name="grafica-v">PR & Marketing</span>
+        <span class="item-link item-voluntar" data-name="pr-v">Grafică</span>
+      </div>
+
+      <!-- !!! data-name trebuie sa fie exact ca cele de aici de sus !!! -->
+      <div class="team-box">
+      </div>
+    </div>
+
+    <!-- Mentori -->
+    <div id = 'mentori' class="team-area">
+      <div class="section-title">
+        <span class="custom-span"> Mentorii echipei </span>
+      </div>
+
+      <!-- !!! data-name trebuie sa fie exact ca cele de aici de sus !!! -->
+      <div class="team-box">
+        <!-- Membru 1 -->
+        <div class="box box-mentor" data-name="mecanica-m">
+          <img src="assets/images/Membri/Ioana Preda.JPG" alt="" />
+          <h2>Ioana Preda</h2>
+          <span>Mentor Mecanică</span>
+        </div>
+        <!-- Membru 2 -->
+        <div class="box box-mentor" data-name="mecanica-m">
+          <img src="assets/images/Membri/Serghei Țirulnic.JPG" alt="" />
+          <h2>Serghei Țirulnic</h2>
+          <span>Mentor Mecanică</span>
+        </div>
+        <!-- Membru 3 -->
+        <div class="box box-mentor" data-name="mecanica-m">
+          <img src="assets/images/Membri/Ionuț Ghiță.JPG" alt="" />
+          <h2>Ionuț Ghiță</h2>
+          <span>Mentor Mecanică</span>
+        </div>
+        <div class="box box-mentor" data-name="programare-m">
+          <img src="assets/images/Membri/Călin Crânguș.JPG" alt="" />
+          <h2>Călin Crânguș</h2>
+          <span>Mentor Programare</span>
         </div>
       </div>
     </div>

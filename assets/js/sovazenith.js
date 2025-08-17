@@ -19,8 +19,14 @@ function seeanimationagain() {
 
     let normal = document.querySelector('.actual').children;
     normal[0].style.transform = 'translateX(-50vw)';
-    normal[1].children[0].style.transform = 'scale(0)';
     normal[2].style.transform = 'translateX(50vw)';
+    
+    let arrow = normal[1].children[0];
+    arrow.style.opacity = '0';
+    setTimeout(() => { 
+        arrow.style.transform = 'scale(0)'; 
+        arrow.addEventListener('transitionend', () => { arrow.style.opacity = '1'; }, {once: true});
+    }, 250); // buffer
 
     
     setTimeout(beginanim, 350);
@@ -47,6 +53,7 @@ window.addEventListener('load', () => {
     }
 })
 
+
 function showcasefinal() {
     
     let frontzenith = document.querySelector('.soy');
@@ -64,7 +71,7 @@ function showcasefinal() {
         zenith.style.transform = 'translateX(0)';
 
         sova.addEventListener('transitionend', () => {
-            arrow.children[0].style.transform = 'scale(1)';
+            arrow.children[0].style.transform = 'scale(.6, .5)';
             document.querySelector('.transitionwhitescreen').style.display = 'none';
         }, {once: true})
     }, {once: true})

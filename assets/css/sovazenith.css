@@ -118,8 +118,7 @@ body {
 
 #arrow {
     width: 50%; height: auto; 
-    transition: 1s cubic-bezier(0.215, 0.610, 0.355, 1); 
-    /* transform: scale(0); */
-
+    transition: transform 1s cubic-bezier(0.215, 0.610, 0.355, 1); 
+    transform: scale(.6, .5);
 }
 

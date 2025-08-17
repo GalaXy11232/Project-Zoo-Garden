@@ -1,5 +1,7 @@
-let filterItems = document.querySelectorAll('.item-link');
-let filterImages = document.querySelectorAll('.box');
+let filterItems = document.querySelectorAll('.item-membru');
+let filterImages = document.querySelectorAll('.box-membru');
+
+// filip aici faci inca 2 queryselectionuri pentru itemele voluntarilor si faci exact acelasi lucru ca mai jos
 
 window.addEventListener('load', ()=>{
     filterItems.forEach(item => {
