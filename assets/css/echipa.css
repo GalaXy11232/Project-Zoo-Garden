@@ -54,6 +54,26 @@
   padding-top: 30px;
 }
 
+
+.selection-link {
+  position: relative;
+  text-decoration: none;
+  cursor: pointer;
+  color: white;
+  background-color: #7b28ae;
+  padding: 1.5em 5em;
+  width: 250px; 
+  border-radius: 25px;
+  text-align: center;
+  transition: .2s ease;
+}
+.selection-link:hover { 
+  transform: scale(1.1); 
+  box-shadow: 0 0 25px #270070;
+  color: pink;
+}
+
+
 @media (max-width: 1250px) {
   .container-a {
     flex-direction: column;

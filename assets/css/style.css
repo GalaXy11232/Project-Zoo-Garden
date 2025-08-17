@@ -576,6 +576,8 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   color: #fff;
 }
 
+.box span { color: #7b28ae !important; }
+
 .h-line {
   width: 150px;
   margin: 0 auto;
