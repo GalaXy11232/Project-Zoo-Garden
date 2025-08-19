@@ -10,7 +10,7 @@ html, body {
 }
 
 .form-container {
-  padding-top: 12rem;
+  padding-top: 7rem;
 }
 
 .col {
@@ -22,12 +22,12 @@ form {
 }
 
 .form-button {
-  background-color: var(--primary);
+  background-color: #ba12aa;
   color: #fff;
 }
 
 .form-button:hover {
-  background-color: #ba12aa;
+  background-color: #da32ca;
   color: #fff;
 }
 

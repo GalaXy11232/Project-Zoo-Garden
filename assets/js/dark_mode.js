@@ -26,6 +26,7 @@ function switch_theme(mode = null) {
       set_style("--primary-gradient", "linear-gradient(to right, #7b28ae, #ba12aa)");
       set_style("--light-text-color", "#fff");
       set_style("--dark-text-color", "#000");
+      set_style("--card-background", "#eee");
     }
 
     else if (mode == 'dark') {
@@ -39,6 +40,7 @@ function switch_theme(mode = null) {
       set_style("--primary-gradient", "linear-gradient(to right, #ba12aa, #d1c3e6)");
       set_style("--light-text-color", "#000");
       set_style("--dark-text-color", "#fff");
+      set_style("--card-background", "#7b28ae");
     }
 }
 

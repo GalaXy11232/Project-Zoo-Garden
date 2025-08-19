@@ -37,7 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: #fff;
+  background: var(--card-background);
   border-radius: 10px;
   box-shadow: 0 7px 25px rgba(0,0,0,0.08);
   position: relative;
@@ -51,7 +51,7 @@
 }
 
 .card-name {
-  color: #000;
+  color: var(--primary);
   font-weight: 600;
 }
 
@@ -62,14 +62,6 @@
 
 .card-s:hover {
   transform: scale(1.03);
-  background: var(--primary);
-}
-
-.card-s:hover .number,
-.card-s:hover .number-special,
-.card-s:hover .card-name,
-.card-s:hover .icon-box i {
-  color: #fff;
 }
 
 /* Timeline */
@@ -82,7 +74,7 @@
 .timeline .heading {
   font-size: 30px;
   font-weight: 500;
-  color: var(--primary);
+  color: #d1c3e6;
   margin-bottom: 80px;
   position: relative;
 }
@@ -117,6 +109,7 @@
 }
 
 .container-r ul li {
+  background-color: #d1c3e6;
   width: 50%;
   padding: 15px 20px;
   box-shadow: 1px 1px 25px #000;
@@ -162,12 +155,12 @@
 .container-r ul li .title-r {
   font-size: 22px;
   font-weight: 500;
-  color: var(--primary);
+  color: #7b28ae;
 }
 
 ul li p {
   font-size: 15px;
-  color: #666;
+  color: #000;
   margin: 7px 0;
   line-height: 23px;
 }
