@@ -72,6 +72,12 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   }
 }
 
+.wave-container {
+  position: absolute;
+  top: 100dvh; left: 0;
+  width: 100%; height: auto;
+}
+
 .hero-section {
   background: url("../images/Cover pagina principala/hero_img_background.png")
     no-repeat center;
