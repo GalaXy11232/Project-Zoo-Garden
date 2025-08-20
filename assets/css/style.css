@@ -130,6 +130,8 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   justify-content: flex-end;
   align-items: center;
   animation: slideFromLeft 0.8s ease-out forwards;
+  position: relative;
+  z-index: 100;
 }
 
 .animatie-text h1 {
