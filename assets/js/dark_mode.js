@@ -27,6 +27,7 @@ function switch_theme(mode = null) {
       set_style("--light-text-color", "#fff");
       set_style("--dark-text-color", "#000");
       set_style("--card-background", "#eee");
+      set_style("--results-icons", "brightness(100%)");
     }
 
     else if (mode == 'dark') {
@@ -41,6 +42,7 @@ function switch_theme(mode = null) {
       set_style("--light-text-color", "#000");
       set_style("--dark-text-color", "#fff");
       set_style("--card-background", "#7b28ae");
+      set_style("--results-icons", "brightness(0) invert(1)");
     }
 }
 

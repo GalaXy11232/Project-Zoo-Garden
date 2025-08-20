@@ -5,14 +5,7 @@
   --light-text-color: #fff;
   --dark-text-color: #000;
   --card-background: #eee;
-}
-
-/* Dark mode */
-
-.dark {
-  --primary: #d1c3e6;
-  --bg-light: #7b28ae;
-  --primary-gradient: linear-gradient(to right, #ba12aa, #d1c3e6);
+  --results-icons: brightness(100%);
 }
 
 #theme-toggle {

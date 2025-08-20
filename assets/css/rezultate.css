@@ -6,7 +6,7 @@
   position: relative;
   padding: 80px 0 20px;
   min-height: calc(100vh - 60px);
-  padding-top: 15rem;
+  padding-top: 10em;
 }
 
 .iconita {
@@ -14,6 +14,7 @@
   max-height: 100%;
   max-width: 100%;
   object-fit: contain;
+  filter: var(--results-icons);
 }
 
 .icon-box {
@@ -29,7 +30,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  padding: 35px 20px;
+  padding: 8em 5vw;
 }
 
 .card-s {
@@ -74,7 +75,7 @@
 .timeline .heading {
   font-size: 30px;
   font-weight: 500;
-  color: #d1c3e6;
+  color: var(--primary);
   margin-bottom: 80px;
   position: relative;
 }

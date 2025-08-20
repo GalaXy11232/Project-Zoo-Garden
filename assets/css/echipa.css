@@ -33,8 +33,9 @@
 }
 
 .container-a .image-a img {
-  height: auto;
-  width: max(500px, 70vw);
+  aspect-ratio: auto;
+  max-height: 60dvh;
+  max-width: 80vw;
   border-radius: 7px;
 }
 
