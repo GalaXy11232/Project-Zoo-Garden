@@ -127,6 +127,11 @@ body {
   display: flex;
 }
 
+.custom-span {
+  padding-top: 50px;
+  margin-bottom: 0;
+}
+
 @media (max-width: 750px) {
   .blog-box {
     margin: 20px 10px;
@@ -138,6 +143,6 @@ body {
   }
 
   .custom-span {
-    padding-top: 50px;
+    padding-top: 150px;
   }
 }
