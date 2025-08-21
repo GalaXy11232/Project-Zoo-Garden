@@ -1,78 +1,86 @@
 // Gallery
+const arrows = document.querySelectorAll(".bi-arrow-right, .bi-arrow-left");
+var currentImgIndex;
 
-  var currentImgIndex;
-  
-  function getImgQueryById(galleryId) {
-    return document.querySelectorAll(`#galerie-${galleryId} img`);
-  }
+function getImgQueryById(galleryId) {
+  return document.querySelectorAll(`#galerie-${galleryId} img`);
+}
 
-  function openFullImg(pic, galleryId) {
-    var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
+function openFullImg(pic, galleryId) {
+  var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
+  var fullImg = document.getElementById(`fullImg${galleryId}`);
+
+  fullImg.style.marginTop = "7em";
+  fullImg.style.maxWidth = "70%";
+  fullImg.style.maxHeight = "70%";
+  fullImg.style.width = "auto";
+  fullImg.style.height = "auto";
+
+  fullImgBox.style.display = "flex";
+  fullImg.src = pic;
+  currentImgIndex = Array.from(getImgQueryById(galleryId)).findIndex(
+    (img) => img.src === pic
+  );
+  updateNavButtons(galleryId);
+
+  document.addEventListener("keyup", (e) => {
+    if (e.code === "Escape") {
+      closeFullImg(galleryId);
+    }
+  });
+
+  fullImgBox.addEventListener("click", (event) => {
+    if (!fullImg.contains(event.target)) {
+      let ok = 0;
+      for(let arrow of arrows) {
+        if(arrow.contains(event.target)) {
+          ok = 1;
+        }
+      }
+      if(!ok) {
+        closeFullImg(galleryId);
+      }
+    }
+  });
+}
+
+function closeFullImg(galleryId) {
+  var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
+  fullImgBox.style.display = "none";
+}
+
+function prevImg(galleryId) {
+  var imgGallery = getImgQueryById(galleryId);
+  if (currentImgIndex > 0) {
+    currentImgIndex--;
     var fullImg = document.getElementById(`fullImg${galleryId}`);
-  
-    fullImg.style.marginTop = "7em";
-    fullImg.style.maxWidth = "70%";
-    fullImg.style.maxHeight = "70%";
-    fullImg.style.width = "auto";
-    fullImg.style.height = "auto";
-
-    fullImgBox.style.display = "flex";
-    fullImg.src = pic;
-    currentImgIndex = Array.from(getImgQueryById(galleryId)).findIndex(
-      (img) => img.src === pic
-    );
+    fullImg.src = imgGallery[currentImgIndex].src;
     updateNavButtons(galleryId);
-
-    document.addEventListener("keyup", (e) => {
-      if (e.code === "Escape") {
-        closeFullImg(galleryId);
-      }
-    });
-
-    fullImgBox.addEventListener("click", (event) => {
-      if (!fullImg.contains(event.target)) {
-        closeFullImg(galleryId);
-      }
-    });
   }
+}
 
-  function closeFullImg(galleryId) {
-    var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
-    fullImgBox.style.display = "none";
+function nextImg(galleryId) {
+  var imgGallery = getImgQueryById(galleryId);
+  if (currentImgIndex < imgGallery.length - 1) {
+    currentImgIndex++;
+    var fullImg = document.getElementById(`fullImg${galleryId}`);
+    fullImg.src = imgGallery[currentImgIndex].src;
+    updateNavButtons(galleryId);
   }
+}
 
-  function prevImg(galleryId) {
-    var imgGallery = getImgQueryById(galleryId);
-    if (currentImgIndex > 0) {
-      currentImgIndex--;
-      var fullImg = document.getElementById(`fullImg${galleryId}`);
-      fullImg.src = imgGallery[currentImgIndex].src;
-      updateNavButtons(galleryId);
-    }
+function updateNavButtons(galleryId) {
+  var imgGallery = getImgQueryById(galleryId);
+  var prevButton = document.getElementById(`lightBoxPrev${galleryId}`);
+  var nextButton = document.getElementById(`lightBoxNext${galleryId}`);
+  if (currentImgIndex === 0) {
+    prevButton.style.display = "none";
+  } else {
+    prevButton.style.display = "block";
   }
-
-  function nextImg(galleryId) {
-    var imgGallery = getImgQueryById(galleryId);
-    if (currentImgIndex < imgGallery.length - 1) {
-      currentImgIndex++;
-      var fullImg = document.getElementById(`fullImg${galleryId}`);
-      fullImg.src = imgGallery[currentImgIndex].src;
-      updateNavButtons(galleryId);
-    }
+  if (currentImgIndex === imgGallery.length - 1) {
+    nextButton.style.display = "none";
+  } else {
+    nextButton.style.display = "block";
   }
-
-  function updateNavButtons(galleryId) {
-    var imgGallery = getImgQueryById(galleryId);
-    var prevButton = document.getElementById(`lightBoxPrev${galleryId}`);
-    var nextButton = document.getElementById(`lightBoxNext${galleryId}`);
-    if (currentImgIndex === 0) {
-      prevButton.style.display = "none";
-    } else {
-      prevButton.style.display = "block";
-    }
-    if (currentImgIndex === imgGallery.length - 1) {
-      nextButton.style.display = "none";
-    } else {
-      nextButton.style.display = "block";
-    }
-  }
+}
