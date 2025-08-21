@@ -128,3 +128,14 @@ body {
     transform: scale(.6, .5);
 }
 
+#again {
+    border: none;
+    border-radius: 1em;
+    background-color: #ba12aa;
+    color: #fff;
+    padding: 0.5em;
+}
+
+#again:hover {
+    background-color: #da32ca;
+}
