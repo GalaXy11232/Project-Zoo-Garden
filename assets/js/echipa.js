@@ -1,9 +1,11 @@
 let filterItems = document.querySelectorAll('.item-membru');
 let filterImages = document.querySelectorAll('.box-membru');
 
-// filip aici faci inca 2 queryselectionuri pentru itemele voluntarilor si faci exact acelasi lucru ca mai jos
+let filterVoluntari = document.querySelectorAll('.item-voluntar');
+let filterImagesVoluntari = document.querySelectorAll('.box-voluntar');
 
 window.addEventListener('load', ()=>{
+    // pentru membrii echipei
     filterItems.forEach(item => {
         item.addEventListener('click', (selectedItem)=>{
             if(selectedItem.target.classList.contains('item-link')){
@@ -19,6 +21,25 @@ window.addEventListener('load', ()=>{
                     }
                 });
             }
+        });
+    });
+
+    // pentru voluntari
+    filterVoluntari.forEach(item => {
+        item.addEventListener('click', (selectedItem) => {
+            if (selectedItem.target.classList.contains('item-link')) {
+                document.querySelector('.menu-active-v').classList.remove('menu-active-v');
+                selectedItem.target.classList.add('menu-active-v');
+
+                let filterName = selectedItem.target.getAttribute('data-name');
+                filterImagesVoluntari.forEach((image) => {
+                    let imgName = image.getAttribute('data-name');
+                    if (imgName == filterName || (filterName == 'all-v')) { 
+                        image.style.display = 'block'; 
+                    }
+                    else { image.style.display = 'none'; }
+                });
+            };
         });
     });
 });

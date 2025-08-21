@@ -120,8 +120,8 @@
   color: var(--bg-light);
 }
 
-.menu-active,
-.menu-active:hover {
+.menu-active, .menu-active:hover,
+.menu-active-v, .menu-active-v:hover {
   background: var(--primary);
   color: var(--bg-light);
 }
