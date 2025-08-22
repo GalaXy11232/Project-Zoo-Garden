@@ -1,6 +1,7 @@
 const btn = document.getElementById("theme-toggle");
 const icon = document.getElementById("theme-icon");
 const anim_img = document.querySelector("#zen img");
+const sovazen_img = document.querySelector('.soy');
 const storageThemeEntry = 'system-mode';
 
 var icon_class;
@@ -29,6 +30,7 @@ function switch_theme(mode = null) {
       set_style("--card-background", "#eee");
       set_style("--results-icons", "brightness(100%)");
       anim_img.setAttribute("src", "assets/images/Branding Zenith/Sigla_mov.png");
+      sovazen_img.setAttribute('src', 'assets/images/Branding Zenith/Sigla_mov.png');
     }
 
     else if (mode == 'dark') {
@@ -45,6 +47,7 @@ function switch_theme(mode = null) {
       set_style("--card-background", "#7b28ae");
       set_style("--results-icons", "brightness(0) invert(1)");
       anim_img.setAttribute("src", "assets/images/Branding Zenith/Sigla_alb.png");
+      sovazen_img.setAttribute('src', 'assets/images/Branding Zenith/Sigla_alb.png');
     }
 }
 

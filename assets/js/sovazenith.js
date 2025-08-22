@@ -1,6 +1,7 @@
 const localStorageEntry = 'seenAnimation';
 const sovapath = 'assets/images/Branding Zenith/Sigla_SovaTech.png';
 const zenithpath = 'assets/images/Branding Zenith/Sigla_mov.png';
+const lightzenithpath = 'assets/images/Branding Zenith/Sigla_alb.png';
 const ANIMDELAY = 3;
 
 function seeanimationagain() {
@@ -93,7 +94,11 @@ function beginanim() {
         soy.style.transform = 'scale(.2)';
 
         soy.addEventListener('transitionend', () => {
-            soy.setAttribute('src', zenithpath);
+            // check if dark mode is enabled
+            if (localStorage.getItem(localStorageEntry) == 'dark')
+                soy.setAttribute('src', lightzenithpath);
+            else soy.setAttribute('src', zenithpath);
+
             soy.style.opacity = '1';
             soy.style.transform = 'scale(1)';
             
