@@ -236,10 +236,7 @@ ul li .date {
 }
 
 @media (max-width:480px) {
-  .cards {
-    grid-template-columns: 1fr;
-    padding: 10px;
-  }
+  .cards { grid-template-columns: 1fr; }
   .card-s {
     flex-direction: column;
     align-items: flex-start;
