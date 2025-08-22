@@ -102,6 +102,33 @@
   transform: translateY(-50%);
 }
 
+/* Language related */
+
+.lang-menu-active { height: 100px !important; }
+.language-dropdown {
+  overflow: hidden;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; justify-content: center; 
+  gap: .5em; 
+  z-index: 2; 
+  position: absolute; 
+  top: 60px; left: 10px;
+  height: 0px; padding: 0 1.5em;
+  background-color: gray;
+  transition: .2s ease;
+}
+
+.lang-link {
+  color: white;
+}
+
+.lang-link, .language-btn {
+  text-decoration: none;
+  cursor: pointer;
+  transition: .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
 /* BIG NAVBAR */
 
 @media (min-width: 991px) {

@@ -51,29 +51,33 @@
     <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     <title>ZENITH</title>
+    
+    <script src = "../assets/js/lang.js"></script>
   </head>
   <body class="custom-bg" id="top">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
       <div class="container-fluid">
-        <a class="navbar-brand me-auto" href="."
-          ><img
+        
+        <a class="navbar-brand me-auto" href=".">
+          <img
             class="imagine-navbar"
             src="../assets/images/Branding Zenith/Sigla_mov.png"
-        /></a>
-        <div
+          />
+        </a>
+        <div 
           class="offcanvas offcanvas-end"
           tabindex="-1"
           id="offcanvasNavbar"
           aria-labelledby="offcanvasNavbarLabel"
         >
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+            <!--<h5 class="offcanvas-title" id="offcanvasNavbarLabel">
               <img
                 class="imagine-navbar"
                 src="../assets/images/Branding Zenith/Sigla_mov.png"
               />
-            </h5>
+            </h5>-->
             <button
               type="button"
               class="btn-close"
@@ -83,14 +87,20 @@
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class = 'nav-item'>
+                <a class = 'nav-link language-btn' onclick = 'toggle_dropdown()'>
+                  Language
+                </a>
+                <div class = 'language-dropdown'>
+                    <a class = 'lang-link' onclick = 'changelang("ro", "echipa.html")'>RO</a>
+                    <a class = 'lang-link' onclick = 'changelang("en", "/en/echipa.html")'>EN</a>
+                  </div>
+              </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link mx-lg-2 active"
-                  aria-current="page"
-                  href="echipa.html">Team</a>
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="echipa.html">Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="blog.html">Activity</a>
@@ -105,7 +115,7 @@
                 <a class="nav-link mx-lg-2" href="galerie.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link mx-lg-2" href="formular.html">Contact us</a>
+                <a class="nav-link mx-lg-2" href="formular.html">Contact</a>
               </li>
               <li>
                 <button id="theme-toggle" class="btn btn-sm" aria-label="Toggle dark mode">
