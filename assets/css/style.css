@@ -331,7 +331,6 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
 
 .container-a {
   width: 80%;
-  padding-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
