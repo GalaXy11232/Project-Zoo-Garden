@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const offcanvasElement = document.getElementById("offcanvasNavbar");
   const navLinks = offcanvasElement.querySelectorAll(".nav-link");
   const themeToggle = document.getElementById("theme-toggle");
+  const langToggle = document.querySelector(".language-btn");
 
   // Allow body scrolling while offcanvas is open so scroll events fire
   offcanvasElement.setAttribute("data-bs-scroll", "true");
@@ -24,8 +25,10 @@ document.addEventListener("DOMContentLoaded", function () {
   // Close when clicking any nav link
   navLinks.forEach(link => {
     link.addEventListener("click", () => {
-      const bsOffcanvas = getOffcanvas();
-      if (bsOffcanvas) bsOffcanvas.hide();
+      if(link !== langToggle) {
+        const bsOffcanvas = getOffcanvas();
+        if (bsOffcanvas) bsOffcanvas.hide();
+      }
     });
   });
 

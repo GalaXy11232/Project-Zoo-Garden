@@ -36,7 +36,7 @@ function changelang(lang, redir) {
 
     window.location.pathname = redir;
 }
-
+//
 function toggle_dropdown() {
     if (!(dropdown_menu.classList).contains('lang-menu-active')) 
         dropdown_menu.classList.add('lang-menu-active');
