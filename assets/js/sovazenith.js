@@ -95,7 +95,7 @@ function beginanim() {
 
         soy.addEventListener('transitionend', () => {
             // check if dark mode is enabled
-            if (localStorage.getItem(localStorageEntry) == 'dark')
+            if (localStorage.getItem(storageThemeEntry) == 'dark')
                 soy.setAttribute('src', lightzenithpath);
             else soy.setAttribute('src', zenithpath);
 
