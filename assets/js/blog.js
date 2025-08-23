@@ -11,5 +11,10 @@ parent_container.addEventListener('click', event => {
     const current_text = current.parentNode.querySelector('.read-more-text');
     current_text.classList.toggle('read-more-text--show');
     
-    current.textContent = current_text.classList.contains('read-more-text--show') ? "Read Less..." : "Read More...";
+    // check for language
+    let lang = localStorage.getItem(Object.keys(storageLanguageEntry)[0]);
+    if (lang == 'ro')
+        current.textContent = current_text.classList.contains('read-more-text--show') ? "Citește mai puțin..." : "Citește mai mult...";
+    else if (lang == 'en')
+        current.textContent = current_text.classList.contains('read-more-text--show') ? "Read Less..." : "Read More...";
 });

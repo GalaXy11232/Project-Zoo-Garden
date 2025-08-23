@@ -124,7 +124,7 @@ body {
 .read-more-text--show {
   color: var(--dark-text-color);
   font-size: 0.9rem;
-  display: flex;
+  display: block;
 }
 
 .custom-span {

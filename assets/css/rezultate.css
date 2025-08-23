@@ -207,7 +207,6 @@ ul li .date {
     margin-bottom: 80px;
   }
   .timeline-container { flex-direction: column; }
-  .timeline-image { max-width: 100%; }
   .timeline-text { padding-top: 20px; }
   .container-r ul li:nth-child(odd) {
     transform: translateX(0);
