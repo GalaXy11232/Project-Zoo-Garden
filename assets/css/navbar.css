@@ -35,6 +35,11 @@
   position: relative;
 }
 
+.nav-item {
+  padding-bottom: 2em;
+  position: relative;
+}
+
 .nav-link:hover,
 .nav-link.active {
   color: var(--primary);
@@ -60,10 +65,9 @@
     #fff 0%,
     transparent 100%
   );
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
+  
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
-  border: solid 1px var(--light-text-color);
+  border: solid 1px #fff;
   border-radius: 1em;
   transition: opacity 0.5s ease;
   height: max(42dvh, 25em);
@@ -72,6 +76,7 @@
 
 .offcanvas-backdrop.show {
   opacity: 1;
+  backdrop-filter: blur(20px);
   transition: all 0.8 ease;
 }
 
@@ -89,7 +94,9 @@
 }
 
 .offcanvas-body {
-  padding-bottom: max(30dvh, 22em);
+  top: 1em;
+  left: 1em;
+  padding-bottom: max(calc(42dvh - 1em), 24em);
   overflow: visible;
   position: relative;
 }
@@ -116,8 +123,9 @@
   gap: .5em; 
   z-index: 2; 
   position: absolute; 
-  top: 60px; left: -3px;
-  height: 0px; padding: 0 1.5em;
+  top: 3.7em; left: -3px;
+  height: 0px; width: 100%;
+  padding: 0 1.5em;
 
   background-color: rgba(255, 255, 255, 0.5);
   backdrop-filter: blur(5px) saturate(150%);
