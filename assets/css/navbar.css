@@ -202,6 +202,10 @@
     visibility: visible;
   }
 
+  .offcanvas-body {
+    width: 75vw;
+  }
+
   .offcanvas-body ul {
     top: -1em;
     right: 0px;
