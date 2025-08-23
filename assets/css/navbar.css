@@ -162,7 +162,7 @@
   transition: .2s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
 
-@media (max-width: 990px) {
+/* @media (max-width: 990px) {
   .language-dropdown {
     flex-direction: row;
     top: 0px; left: 100%;
@@ -178,7 +178,7 @@
     width: 100% !important;
     visibility: visible;
   }
-}
+} */
 
 /* BIG NAVBAR */
 
