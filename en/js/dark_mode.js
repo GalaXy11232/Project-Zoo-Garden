@@ -28,6 +28,7 @@ function switch_theme(mode = null) {
       set_style("--light-text-color", "#fff");
       set_style("--dark-text-color", "#000");
       set_style("--card-background", "#eee");
+      set_style("--navbar-bg", "linear-gradient(to right, #d1c3e6, #d1c3e680)");
       set_style("--results-icons", "brightness(100%)");
       anim_img.setAttribute("src", "../assets/images/Branding Zenith/Sigla_mov.png");
       sovazen_img.setAttribute('src', '../assets/images/Branding Zenith/Sigla_mov.png');
@@ -45,6 +46,7 @@ function switch_theme(mode = null) {
       set_style("--light-text-color", "#000");
       set_style("--dark-text-color", "#fff");
       set_style("--card-background", "#7b28ae");
+      set_style("--navbar-bg", "linear-gradient(to right, #5b1dc380, #5b1dc340)");
       set_style("--results-icons", "brightness(0) invert(1)");
       anim_img.setAttribute("src", "../assets/images/Branding Zenith/Sigla_alb.png");
       sovazen_img.setAttribute('src', '../assets/images/Branding Zenith/Sigla_alb.png');

@@ -6,6 +6,7 @@
   --dark-text-color: #000;
   --card-background: #eee;
   --results-icons: brightness(100%);
+  --navbar-bg: linear-gradient(to right, #d1c3e680, #d1c3e640);
 }
 
 #theme-toggle {
