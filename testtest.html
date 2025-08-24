@@ -57,8 +57,8 @@
 
   <title>Thank You</title>
   <script src = './assets/js/lang.js'></script> 
-  <script src = 'nav.js'></script>
-  <link rel="stylesheet" href="nav.css">
+  <script src = './assets/js/nav.js'></script>
+  <link rel="stylesheet" href="./assets/css/nav.css">
 
 </head>
 <body class="custom-bg">
@@ -144,86 +144,41 @@
 
   <div class = 'center-wrapper'>
     <div class = 'nav-wrapper'>
-      <div class = 'nav-wide-visible'>
-        <div>
-          <a href=".">
-            <img class="nav-logo" src="assets/images/Branding Zenith/Sigla_mov.png"/>
-          </a>
-        </div>
-
-        <div>
+      <div class = 'logo-wrapper'>
+        <a href=".">
+          <img class="nav-logo" src="assets/images/Branding Zenith/Sigla_mov.png"/>
+        </a>
+      </div>
+      <div class = 'buttons-wrapper d-flex nowrap justify-content-center align-items-center' style = 'gap: 1em;'>
+        <div style = 'position: relative;'>
           <a class = 'nav-link language-btn' onclick = 'toggle_dropdown()'>
             Limbă
           </a>
+          <div class = 'language-dropdown'>
+            <a class = 'lang-link' onclick = 'changelang("ro", "thank-you.html")'>RO</a>
+            <a class = 'lang-link' onclick = 'changelang("en", "/en/thank-you.html")'>EN</a>
+          </div>
         </div>
 
-        <div style = 'display: flex; flex-wrap: nowrap; gap: 25px;'>
-          <a class="navbar-link" href="index.html">Acasă</a>
-          <a class="navbar-link" href="echipa.html">Echipă</a>
-          <a class="navbar-link" href="blog.html">Activitate</a>
-          <a class="navbar-link" href="rezultate.html">Rezultate</a>
-          <a class="navbar-link" href="sponsori.html">Sponsori</a>
-          <a class="navbar-link" href="galerie.html">Galerie</a>
-          <a class="navbar-link" href="formular.html">Contact</a>
+        <div class="navbar-links">
+          <a class="nav-link" href="index.html">Acasă</a>
+          <a class="nav-link" href="echipa.html">Echipă</a>
+          <a class="nav-link" href="blog.html">Activitate</a>
+          <a class="nav-link" href="rezultate.html">Rezultate</a>
+          <a class="nav-link" href="sponsori.html">Sponsori</a>
+          <a class="nav-link" href="galerie.html">Galerie</a>
+          <a class="nav-link" href="formular.html">Contact</a>
         </div>
-
-        <div>
-          <button
-            class="navbar-toggler pe-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <i class="bi bi-moon"></i>
-          </button>
-        </div>
-      </div>
-
-      <div class = 'nav-phone-visible'>
-        <div>
-          <a href=".">
-            <img class="nav-logo" src="assets/images/Branding Zenith/Sigla_mov.png"/>
-          </a>
-        </div>
-
-        <div>
-          <a class = 'nav-link language-btn' onclick = 'toggle_dropdown()'>
-            Limbă
-          </a>
-        </div>
-
-        <div>
-          <button class="navbar-toggler pe-0" 
-            type="button" 
-            data-bs-target="#offcanvasNavbar" 
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon" onclick = 'dropdown_nav()'>v</span>
-          </button>
-        </div>
-      </div>
-
-      <div class = 'navbar-dropdown'>
-        <a class="navbar-link" href="index.html">Acasă</a>
-        <a class="navbar-link" href="echipa.html">Echipă</a>
-        <a class="navbar-link" href="blog.html">Activitate</a>
-        <a class="navbar-link" href="rezultate.html">Rezultate</a>
-        <a class="navbar-link" href="sponsori.html">Sponsori</a>
-        <a class="navbar-link" href="galerie.html">Galerie</a>
-        <a class="navbar-link" href="formular.html">Contact</a>
+        <button id="theme-toggle" class="btn btn-sm" aria-label="Toggle dark mode">
+          <i id="theme-icon"></i>
+        </button>
+        <div class="navbar-toggler-button" onclick = 'dropdown_nav()'><span style = 'font-size: 2.2em;'>&#8801;</span></div>
       </div>
     </div>
   </div>
 
-  <div class = 'language-dropdown' style = "position: absolute; top: 200px; left: 0; z-index: 10;">
-    <a class = 'lang-link' onclick = 'changelang("ro", "thank-you.html")'>RO</a>
-    <a class = 'lang-link' onclick = 'changelang("en", "/en/thank-you.html")'>EN</a>
-  </div>
-  
-
   <!-- Main content -->
-  <main class="d-flex justify-content-center align-items-center">
+  <main class="d-flex justify-content-center align-items-center" style="padding-top: 10em; float: right;">
       <span class="custom-span">Mulțumim! mesajul tău a fost trimis.</span>
   </main>
   
@@ -290,7 +245,7 @@
     </div>
   </footer>
 
-  <script src="./assets/js/navbar.js"></script>
+  <script src="./assets/js/nav.js"></script>
   <script src="./assets/js/dark_mode.js"></script>
 </body>
 </html>

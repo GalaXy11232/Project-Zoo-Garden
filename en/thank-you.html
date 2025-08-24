@@ -21,7 +21,7 @@
     href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
   />
   <link rel="stylesheet" href="../assets/css/style.css" />
-  <link rel="stylesheet" href="../assets/css/navbar.css" />
+  <link rel="stylesheet" href="../assets/css/nav.css" />
   <link rel="stylesheet" href="../assets/css/footer.css" />
   <link rel="stylesheet" href="../assets/css/bttb.css" />
   <link rel="stylesheet" href="../assets/css/scroll-bar.css" />
@@ -72,84 +72,40 @@
 </head>
 <body class="custom-bg">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-    <div class="container-fluid">
-      <a class="navbar-brand me-auto" href="."
-        ><img
-          class="imagine-navbar"
-          src="../assets/images/Branding Zenith/Sigla_mov.png"
-      /></a>
-      <div
-        class="offcanvas offcanvas-end"
-        tabindex="-1"
-        id="offcanvasNavbar"
-        aria-labelledby="offcanvasNavbarLabel"
-      >
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-            <img
-              class="imagine-navbar"
-              src="../assets/images/Branding Zenith/Sigla_mov.png"
-            />
-          </h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="offcanvas"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
-            <li class = 'nav-item'>
-              <a class = 'nav-link language-btn' onclick = 'toggle_dropdown()'>
-                Language
-              </a>
-              <div class = 'language-dropdown'>
-                  <a class = 'lang-link' onclick = 'changelang("ro", "thank-you.html")'>RO</a>
-                  <a class = 'lang-link' onclick = 'changelang("en", "/en/thank-you.html")'>EN</a>
-                </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="echipa.html">Team</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="blog.html">Activity</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="rezultate.html">Results</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="sponsori.html">Sponsors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="galerie.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mx-lg-2" href="formular.html">Contact us</a>
-            </li>
-            <li class="nav-item">
-              <button id="theme-toggle" class="btn btn-sm" aria-label="Toggle dark mode">
-                <i id="theme-icon"></i>
-              </button>
-            </li>
-          </ul>
-        </div>
+  <div class = 'center-wrapper'>
+    <div class = 'nav-wrapper'>
+      <div class = 'logo-wrapper'>
+        <a href=".">
+          <img class="nav-logo" src="../assets/images/Branding Zenith/Sigla_mov.png"/>
+        </a>
       </div>
-      <button
-        class="navbar-toggler pe-0"
-        type="button"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <div class = 'buttons-wrapper d-flex nowrap justify-content-center align-items-center' style = 'gap: 1em;'>
+        <div style = 'position: relative;'>
+          <a class = 'nav-link language-btn' onclick = 'toggle_dropdown()'>
+            Language
+          </a>
+          <div class = 'language-dropdown'>
+            <a class = 'lang-link' onclick = 'changelang("ro", "thank-you.html")'>RO</a>
+            <a class = 'lang-link' onclick = 'changelang("en", "/en/thank-you.html")'>EN</a>
+          </div>
+        </div>
+
+        <div class="navbar-links">
+          <a class="nav-link" href="index.html">Home</a>
+          <a class="nav-link" href="echipa.html">Team</a>
+          <a class="nav-link" href="blog.html">Activity</a>
+          <a class="nav-link" href="rezultate.html">Results</a>
+          <a class="nav-link" href="sponsori.html">Sponsors</a>
+          <a class="nav-link" href="galerie.html">Gallery</a>
+          <a class="nav-link" href="formular.html">Contact us</a>
+        </div>
+        <button id="theme-toggle" class="btn btn-sm" aria-label="Toggle dark mode">
+          <i id="theme-icon"></i>
+        </button>
+        <div class="navbar-toggler-button" onclick = 'dropdown_nav()'><span style = 'font-size: 2.2em;'>&#8801;</span></div>
+      </div>
     </div>
-  </nav>
+  </div>
 
   <!-- Main content -->
   <main class="d-flex justify-content-center align-items-center">
@@ -219,7 +175,7 @@
     </div>
   </footer>
 
-  <script src="../assets/js/navbar.js"></script>
+  <script src="../assets/js/nav.js"></script>
   <script src="js/dark_mode.js"></script>
 </body>
 </html>
