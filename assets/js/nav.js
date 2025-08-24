@@ -2,10 +2,14 @@ const ADDITIONAL_PADDING = 30; //px
 
 let menu, menuInitHeight;
 let navbar, navbarHeight;
+let lastWidth, currentWidth;
+
 
 window.addEventListener('DOMContentLoaded', () => {
     menu = document.querySelector('.navbar-links');
     navbar = document.querySelector('.nav-wrapper');
+
+    lastWidth = window.innerWidth;
 
     menuInitHeight = getComputedStyle(menu).height;
     navbarHeight = getComputedStyle(navbar).height;
@@ -16,10 +20,14 @@ window.addEventListener('DOMContentLoaded', () => {
 })
 
 window.addEventListener('resize', () => {
-    if(window.innerWidth > 1000) {
-        menu.style.height = navbarHeight;
-    } else {
-        menu.style.height = 0//add_to_height(menuInitHeight, ADDITIONAL_PADDING);
+    currentWidth = window.innerWidth;
+    if(currentWidth!=lastWidth) {
+        if(window.innerWidth > 1000) {
+            menu.style.height = navbarHeight;
+        } else {
+            menu.style.height = add_to_height(menuInitHeight, ADDITIONAL_PADDING);
+        }
+        lastWidth = currentWidth;
     }
 }); 
 
