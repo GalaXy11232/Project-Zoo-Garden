@@ -9,9 +9,9 @@ window.addEventListener('DOMContentLoaded', () => {
 
     menuInitHeight = getComputedStyle(menu).height;
     navbarHeight = getComputedStyle(navbar).height;
-    if (window.innerWidth < 1001) {
+    if (window.innerWidth < 1001)
         menu.style.height = 0;
-    }
+
     menu.style.border = 'none';
 })
 
@@ -19,7 +19,7 @@ window.addEventListener('resize', () => {
     if(window.innerWidth > 1000) {
         menu.style.height = navbarHeight;
     } else {
-        menu.style.height = 0;
+        menu.style.height = add_to_height(menuInitHeight, ADDITIONAL_PADDING);
     }
 }); 
 
