@@ -38,7 +38,14 @@ function changelang(lang, redir) {
 }
 //
 function toggle_dropdown() {
-    if (!(dropdown_menu.classList).contains('lang-menu-active')) 
+    let arr = document.querySelector('.arr_menu');
+
+    if (!(dropdown_menu.classList).contains('lang-menu-active')) {
         dropdown_menu.classList.add('lang-menu-active');
-    else dropdown_menu.classList.remove('lang-menu-active');
+        arr.classList.add('rotate180');
+    }
+    else {
+        dropdown_menu.classList.remove('lang-menu-active');
+        arr.classList.remove('rotate180');
+    }
 }

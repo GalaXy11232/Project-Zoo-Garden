@@ -66,12 +66,20 @@
         </div>
         <div class = 'buttons-wrapper d-flex nowrap justify-content-center align-items-center' style = 'gap: 1em;'>
           <div style = 'position: relative;'>
-            <a class = 'nav-link language-btn' onclick = 'toggle_dropdown()'>
-              Language
+            <a class = 'language-btn' onclick = 'toggle_dropdown()'>
+              <img src = '../assets/images/Flags/Flag_EN.svg' alt = 'EN' width = '30px'>
+              <svg class="arr_menu" width="16" height="16" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
             </a>
             <div class = 'language-dropdown'>
-              <a class = 'lang-link' onclick = 'changelang("ro", "galerie.html")'>RO</a>
-              <a class = 'lang-link' onclick = 'changelang("en", "/en/galerie.html")'>EN</a>
+              <a class = 'lang-link' onclick = 'changelang("ro", "galerie.html")'>
+                <img src = '../assets/images/Flags/Flag_RO.svg' alt = 'RO' width = '30px'>
+              </a>
+              <a class = 'lang-link' onclick = 'changelang("en", "/en/galerie.html")'>
+                <img src = '../assets/images/Flags/Flag_EN.svg' alt = 'EN' width = '30px'>
+              </a>
             </div>
           </div>
   
