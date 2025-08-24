@@ -19,7 +19,7 @@ window.addEventListener('resize', () => {
     if(window.innerWidth > 1000) {
         menu.style.height = navbarHeight;
     } else {
-        menu.style.height = add_to_height(menuInitHeight, ADDITIONAL_PADDING);
+        menu.style.height = 0//add_to_height(menuInitHeight, ADDITIONAL_PADDING);
     }
 }); 
 
