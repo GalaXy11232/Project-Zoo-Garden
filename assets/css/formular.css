@@ -9,8 +9,35 @@ html, body {
   flex-direction: column;
 }
 
-.form-container {
-  padding-top: 7rem;
+.contact-info {
+  margin-top: 9em;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(180deg, #ba12aa 0%, var(--primary) 100%);
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 0;
+}
+
+.contact-info div {
+  background: var(--bg-light);
+  height: 100%;
+  width: 33%;
+  text-align: center;
+  color: var(--primary);
+  font-family: 'Prompt', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.contact-info div svg {
+  margin-top: .5em;
 }
 
 .col {
@@ -19,6 +46,16 @@ html, body {
 
 form {
     padding-top: 0.5rem;
+}
+
+.form-group p {
+  color: var(--dark-text-color);
+  font-family: 'Prompt', monospace;
+  font-size: 1.1em;
+  margin: 1em 0;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: .5em;
 }
 
 .form-button {
@@ -39,4 +76,25 @@ form {
 
 main {
   flex: 1;
+}
+
+@media (max-width: 991px) {
+  .contact-info {
+    margin-top: 7em;
+    flex-direction: column;
+    background: linear-gradient(90deg, #ba12aa 0%, var(--primary) 100%);
+    background-size: 100% 100%;
+    align-items: space-between;
+    justify-content: center;
+    gap: .5em;
+  }
+
+  .contact-info div {
+    width: 100%;
+    height: auto;
+  }
+
+  .custom-span {
+    margin: 0;
+  }
 }
