@@ -7,6 +7,9 @@
   --card-background: #eee;
   --results-icons: brightness(100%);
   --navbar-bg: linear-gradient(to right, #d1c3e680, #d1c3e640);
+  
+  --rvr_shadow-color: #dc82ff;
+  --shadow-color: var(--rvr_shadow-color);
 }
 
 #theme-toggle {
