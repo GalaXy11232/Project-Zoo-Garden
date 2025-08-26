@@ -20,13 +20,14 @@ html, body {
   background-size: 90% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
+  gap: .5em;
   padding: 0;
 }
 
 .contact-info div {
   background: var(--bg-light);
   height: 100%;
-  width: 33%;
+  width: 50%;
   text-align: center;
   color: var(--primary);
   font-family: 'Prompt', monospace;
@@ -83,7 +84,9 @@ main {
     margin-top: 7em;
     flex-direction: column;
     background: linear-gradient(90deg, #ba12aa 0%, var(--primary) 100%);
-    background-size: 100% 100%;
+    background-size: 75% 100%;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
     align-items: space-between;
     justify-content: center;
     gap: .5em;
