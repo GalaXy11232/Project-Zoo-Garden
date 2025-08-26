@@ -41,6 +41,15 @@ html, body {
   margin-top: .5em;
 }
 
+.contact-info a {
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+  color: var(--primary);
+}
+
 .col {
   padding-bottom: 0.5rem;
 }
