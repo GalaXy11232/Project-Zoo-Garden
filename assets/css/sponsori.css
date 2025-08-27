@@ -85,6 +85,14 @@
   transition: opacity 0.3s ease;
 }
 
+.image-link {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .partner-square:hover .grid-link:hover,
 .partner-square:hover .grid-link:active {
   color: #7b28ae;

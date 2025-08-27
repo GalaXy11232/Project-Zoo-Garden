@@ -88,6 +88,10 @@ main {
   flex: 1;
 }
 
+#trimite {
+  margin: 1em 0;
+}
+
 @media (max-width: 991px) {
   .contact-info {
     margin-top: 7em;
