@@ -4,9 +4,10 @@
 }
 
 .team-area {
-  display: grid;
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   padding-top: 50px;
 }
 
@@ -71,7 +72,7 @@
 }
 
 .box span {
-  color: #7b28ae !important;
+  color: var(--primary) !important;
 }
 
 .image-p {
@@ -87,9 +88,10 @@
 }
 
 .team-box {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3em;
   margin: 50px auto 100px;
 }
 
@@ -128,11 +130,11 @@
   width: 14rem;
   margin: 1.25rem;
   padding: 2rem 0.5rem;
-  background: #ececec;
+  background: var(--team-photo-bg);
+  color: var(--dark-text-color);
   text-align: center;
-  border-radius: 5px;
+  border-radius: 1em;
   overflow: hidden;
-  box-shadow: 10px 10px 15px #c7c4c4, -10px -10px 15px #fff;
   animation: SclAnimation 0.4s ease;
 }
 
@@ -150,7 +152,6 @@
   border-radius: 10%;
   padding: 5px;
   margin-bottom: 15px;
-  border: 2px solid #dee2e6;
   backface-visibility: hidden;
   transition: all 0.5s ease-in-out;
 }
