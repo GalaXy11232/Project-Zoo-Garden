@@ -76,8 +76,8 @@
 .nav-link.active {
     color: var(--primary);
     text-shadow: 
-        0 0 7px var(--shadow-color),
-        0 0 7px var(--shadow-color)
+        0 0 3px var(--shadow-color),
+        0 0 3px var(--shadow-color)
     ;
 }
 

@@ -19,7 +19,7 @@
 
 /* Font overrides */
 
-body { font-family: 'Prompt', sans-serif; }
+body { font-family: 'Prompt', sans-serif; font-size: 100%;}
 h1, h2, h3 { font-family: 'Prompt', monospace; }
 
 /* Chestii generale */
@@ -34,14 +34,14 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
   font-weight: 600;
   color: var(--primary);
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom: 5em;
 }
 
 .custom-span::after {
   position: absolute;
   content: " ";
   width: 50%;
-  height: 4px;
+  height: .25em;
   left: 50%;
   bottom: -5px;
   background-image: var(--primary-gradient);
