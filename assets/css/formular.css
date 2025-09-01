@@ -10,8 +10,8 @@ html, body {
 }
 
 .contact-info {
-  margin-top: 9em;
-  height: auto;
+  margin-top: 2em;
+  height: 60dvh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -26,25 +26,27 @@ html, body {
 
 .contact-info div {
   background: var(--bg-light);
-  height: 100%;
   width: 50%;
+  height: 100%;
   text-align: center;
   color: var(--primary);
   font-family: 'Prompt', monospace;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
 .contact-info a {
   text-decoration: none;
   color: var(--dark-text-color);
+  transition: all .2s ease;
 }
 
 .contact-info a:hover {
   text-decoration: underline;
   color: var(--primary);
+  transform: scale(1.2);
 }
 
 .contact-info .custom-span {
@@ -57,6 +59,10 @@ html, body {
 
 form {
     padding-top: 0.5rem;
+}
+
+.form-container {
+  margin-top: 7em;
 }
 
 .form-group p {
@@ -95,7 +101,6 @@ main {
 
 @media (max-width: 991px) {
   .contact-info {
-    margin-top: 7em;
     flex-direction: column;
     background: linear-gradient(90deg, #ba12aa 0%, var(--primary) 100%);
     background-size: 75% 100%;
