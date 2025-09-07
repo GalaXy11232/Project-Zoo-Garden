@@ -11,7 +11,7 @@ html, body {
 
 .contact-info {
   margin-top: 2em;
-  height: 60dvh;
+  height: clamp(13em, 60dvh, 30em);
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -37,10 +37,16 @@ html, body {
   align-items: center;
 }
 
-.contact-info a {
+.contact-info a, 
+.contact-info p {
+  font-size: clamp(1em, 1.1vw, 2em);
   text-decoration: none;
   color: var(--dark-text-color);
   transition: all .2s ease;
+}
+
+.contact-info p:hover {
+  transform: scale(1.2);
 }
 
 .contact-info a:hover {
