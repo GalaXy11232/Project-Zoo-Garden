@@ -57,6 +57,7 @@
     color: #000;
     font-weight: 500;
     position: relative;
+    transition: all .3s ease;
 }
 
 .nav-link::before {
