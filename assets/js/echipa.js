@@ -4,7 +4,35 @@ let filterImages = document.querySelectorAll('.box-membru');
 let filterVoluntari = document.querySelectorAll('.item-voluntar');
 let filterImagesVoluntari = document.querySelectorAll('.box-voluntar');
 
+let tooltip_nodes_qsall = document.querySelectorAll('.facultate-tooltip');
+let tooltip_nodes = []
+let can_hide = [];
+
+window.addEventListener('click', () => {
+    tooltip_nodes.forEach(nd => { 
+        if (nd.children[1].classList.contains('visible') && can_hide[tooltip_nodes.indexOf(nd)]) {
+            nd.children[1].classList.remove('visible'); 
+            can_hide[tooltip_nodes.indexOf(nd)] = false;
+        }
+    })
+})
+
 window.addEventListener('load', ()=>{
+    tooltip_nodes_qsall.forEach(nd => tooltip_nodes.push(nd));
+
+    tooltip_nodes.forEach(nd => {
+        can_hide.push(false);
+
+        nd.addEventListener('click', () => {
+            var ndtext = nd.children[1];
+            if (!ndtext.classList.contains('visible')) ndtext.classList.add('visible');
+            
+            if (!can_hide[tooltip_nodes.indexOf(nd)]) setTimeout(() => {
+                can_hide[tooltip_nodes.indexOf(nd)] = true;
+            }, 250);
+        });
+    })
+
     // pentru membrii echipei
     filterItems.forEach(item => {
         item.addEventListener('click', (selectedItem)=>{

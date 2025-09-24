@@ -3,6 +3,32 @@
   padding: 0;
 }
 
+.facultate-tooltiptext {
+  position: absolute; 
+  left: 0; right: 0; 
+  margin: auto; margin-top: 1em;
+  background-color: var(--tooltip-color); 
+  border-radius: 15px;
+  width: fit-content !important; 
+  padding: 5px 2em; font-size: 80%;
+  opacity: 1; visibility: hidden;
+  transition: .25s ease cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+.facultate-tooltiptext::after { /* arrow */
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent var(--tooltip-color) transparent;
+}
+.facultate-tooltip { position: relative; }
+.facultate-tooltip > i { border-bottom: 1px dotted black; cursor: help;}
+.facultate-tooltip:hover div { visibility: visible; opacity: 1;}
+.visible { visibility: visible !important; opacity: 1 !important;}
+
 .team-area {
   display: flex;
   align-items: center;

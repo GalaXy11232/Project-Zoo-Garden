@@ -11,6 +11,7 @@
 
   --rvr_shadow-color: #dc82ff;
   --shadow-color: var(--rvr_shadow-color);
+  --tooltip-color: #f9c0ff;
 }
 
 #theme-toggle {
