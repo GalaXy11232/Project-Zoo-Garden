@@ -40,7 +40,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
 
 .custom-span::after {
   position: absolute;
-  content: " ";
+  content: "";
   width: 50%;
   height: .25em;
   left: 50%;

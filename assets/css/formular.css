@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
   height: 100%;
   margin: 0;
 }
@@ -9,8 +10,7 @@ html, body {
   flex-direction: column;
 }
 
-.contact-info {
-  margin-top: 2em;
+.contact-info-content {
   height: clamp(13em, 60dvh, 30em);
   display: flex;
   flex-direction: row;
@@ -20,43 +20,54 @@ html, body {
   background-size: 90% 100%;
   background-repeat: no-repeat;
   overflow: hidden;
-  gap: .5em;
+  gap: 0.5em;
   padding: 0;
 }
 
-.contact-info div {
+.contact-info-content div {
   background: var(--bg-light);
   width: 50%;
   height: 100%;
   text-align: center;
   color: var(--primary);
-  font-family: 'Prompt', monospace;
+  font-family: "Prompt", monospace;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
 }
 
-.contact-info a, 
-.contact-info p {
+.contact-info-content a,
+.contact-info-content p {
   font-size: clamp(1em, 1.1vw, 2em);
   text-decoration: none;
   color: var(--dark-text-color);
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
-.contact-info p:hover {
+.contact-info-content p:hover {
   transform: scale(1.2);
 }
 
-.contact-info a:hover {
+.contact-info-content a:hover {
   text-decoration: underline;
   color: var(--primary);
   transform: scale(1.2);
 }
 
-.contact-info .custom-span {
+.contact-info-content .custom-span,
+.contact-info-header .custom-span {
   margin-bottom: 1em;
+}
+
+.contact-info-header {
+  position: relative;
+  cursor: pointer;
+  transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.contact-info-content {
+  display: none;
 }
 
 .col {
@@ -64,7 +75,7 @@ html, body {
 }
 
 form {
-    padding-top: 0.5rem;
+  padding-top: 0.5rem;
 }
 
 .form-container {
@@ -73,12 +84,12 @@ form {
 
 .form-group p {
   color: var(--dark-text-color);
-  font-family: 'Prompt', monospace;
+  font-family: "Prompt", monospace;
   font-size: 1.1em;
   margin: 1em 0;
   display: grid;
   grid-template-columns: 1em auto;
-  gap: .5em;
+  gap: 0.5em;
 }
 
 .form-button {
@@ -105,8 +116,21 @@ main {
   margin: 1em 0;
 }
 
+.dropdown-arrow {
+  position: absolute;
+  right: 0;
+  font-size: clamp(25px, 2.5vw + 1rem, 34px);
+  font-weight: 600;
+  color: var(--primary);
+  transform: rotate(-90deg);
+}
+
+.dropdown-arrow.open {
+  transform: rotate(90deg);
+}
+
 @media (max-width: 991px) {
-  .contact-info {
+  .contact-info-content {
     height: 70vh;
     flex-direction: column;
     background: linear-gradient(90deg, #ba12aa 0%, var(--primary) 100%);
@@ -115,10 +139,10 @@ main {
     background-position: 50% 0%;
     align-items: space-between;
     justify-content: center;
-    gap: .5em;
+    gap: 0.5em;
   }
 
-  .contact-info div {
+  .contact-info-content div {
     width: 100%;
     flex: 1;
   }
@@ -126,4 +150,34 @@ main {
   .custom-span {
     margin: 0;
   }
+}
+
+/* Google maps embed */
+.embed-map-responsive {
+  position: relative;
+  text-align: right;
+  width: 100% !important;
+  height: 0;
+  padding-bottom: 70.5%;
+  padding-right: 100%;
+}
+
+.embed-map-container {
+  overflow: hidden;
+  background: none !important;
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.embed-map-frame {
+  width: 100% !important;
+  height: 100% !important;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
