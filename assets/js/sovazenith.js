@@ -56,7 +56,6 @@ window.addEventListener('load', () => {
 
 
 function showcasefinal() {
-    
     let frontzenith = document.querySelector('.soy');
     let findiv = document.querySelector('.actual');
     let zenith = findiv.children[0];
@@ -66,8 +65,8 @@ function showcasefinal() {
     frontzenith.classList.add('soy2');
     frontzenith.classList.add('up');
     frontzenith.addEventListener('animationend', () => {
+        
         // bring in sides
-
         sova.style.transform = 'translateX(0)';
         zenith.style.transform = 'translateX(0)';
 
@@ -81,8 +80,8 @@ function showcasefinal() {
 
 function beginanim() {    
     let soy = document.querySelector('.soy');
-
     let sq = document.getElementById('rpp').children;
+    
     for (let i = 0; i < sq.length; i++) {
         sq[i].classList.add('square-one');
         sq[i].style.animationDelay = `${(ANIMDELAY + 3*i) / 8}s`;
@@ -95,10 +94,12 @@ function beginanim() {
 
         soy.addEventListener('transitionend', () => {
             // check if dark mode is enabled
-            if (localStorage.getItem(storageThemeEntry) == 'dark')
+            if (localStorage.getItem(storageThemeEntry) == 'dark') {
                 soy.setAttribute('src', lightzenithpath);
-            else soy.setAttribute('src', zenithpath);
-
+            } else {
+                soy.setAttribute('src', zenithpath);
+            }
+            
             soy.style.opacity = '1';
             soy.style.transform = 'scale(1)';
             

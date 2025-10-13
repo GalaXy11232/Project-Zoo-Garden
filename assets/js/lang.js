@@ -36,7 +36,7 @@ function changelang(lang, redir) {
 
     window.location.pathname = redir;
 }
-//
+
 function toggle_dropdown() {
     let arr = document.querySelector('.arr_menu');
 
