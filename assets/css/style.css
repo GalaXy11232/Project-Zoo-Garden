@@ -115,7 +115,7 @@ h1, h2, h3 { font-family: 'Prompt', monospace; }
 }
 
 .render-robot {
-  background: url("../images/Cover\ pagina\ principala/render_robot.png") no-repeat center;
+  background: url("../images/Cover\ pagina\ principala/render_robot.webp") no-repeat center;
   background-size: min(70vw, 70vh);
   overflow: hidden;
   width: 100%;
