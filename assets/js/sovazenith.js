@@ -1,7 +1,7 @@
 const localStorageEntry = 'seenAnimation';
-const sovapath = 'assets/images/Branding Zenith/Sigla_SovaTech.png';
-const zenithpath = 'assets/images/Branding Zenith/Sigla_mov.png';
-const lightzenithpath = 'assets/images/Branding Zenith/Sigla_alb.png';
+const sovapath = '/assets/images/Branding Zenith/Sigla_SovaTech.png';
+const zenithpath = '/assets/images/Branding Zenith/Sigla_mov.png';
+const lightzenithpath = '/assets/images/Branding Zenith/Sigla_alb.png';
 const ANIMDELAY = 3;
 
 function seeanimationagain() {
