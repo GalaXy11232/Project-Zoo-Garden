@@ -10,7 +10,9 @@ window.addEventListener('load', () => {
     }
 });
 
-
+/**
+ * @param {HTMLDivElement} hex 
+*/
 function randomizeHexagon(hex) {
     hex.style.left = `${Math.round(Math.random() * window.innerWidth)}px`;
     hex.style.height = `${25 + Math.round(Math.random() * 50)}px`;

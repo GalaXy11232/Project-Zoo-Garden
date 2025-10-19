@@ -41,7 +41,8 @@ if (path.includes('/en')) {
   ];
 }
 
-function generateDynamicContent() {
+//Generate dynamic content
+document.addEventListener('DOMContentLoaded', () => {
   const container = document.getElementById("dynamic-content");
 
   plansData.forEach(plan => {
@@ -54,6 +55,4 @@ function generateDynamicContent() {
 
     container.insertAdjacentHTML("beforeend", dynamicHTML);
   });
-}
-
-generateDynamicContent();
+});

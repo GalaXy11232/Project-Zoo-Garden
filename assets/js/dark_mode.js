@@ -8,8 +8,15 @@ var icon_class;
 var theme;
 var r = document.querySelector(":root");
 
+/**
+ * @param {string} property
+ * @param {string} value
+*/
 function set_style(property, value) { r.style.setProperty(property, value); }
 
+/**
+ * @param {string} mode
+ */
 function switch_theme(mode = null) {
 
   // just switch to opposite value
@@ -78,6 +85,6 @@ window.addEventListener("load", () => {
   }
 });
 
-btn.addEventListener("click", function(event) {
+btn.addEventListener("click", (event) => {
   switch_theme();
 });

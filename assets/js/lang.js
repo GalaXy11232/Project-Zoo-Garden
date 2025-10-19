@@ -20,6 +20,9 @@ window.addEventListener('DOMContentLoaded', () => {
     
 })
 
+/**
+ * @param {Object} entryDict
+*/
 function handleStorage(entryDict) {
     let key = Object.keys(entryDict)[0];
     let value = Object.values(entryDict)[0];
@@ -30,6 +33,10 @@ function handleStorage(entryDict) {
     }
 }
 
+/**
+ * @param {string} lang 
+ * @param {string} redir 
+*/
 function changelang(lang, redir) {
     let entryKey = Object.keys(storageLanguageEntry)[0];
     localStorage.setItem(entryKey, lang);

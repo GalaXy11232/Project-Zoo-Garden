@@ -2,10 +2,18 @@
 const arrows = document.querySelectorAll(".bi-arrow-right, .bi-arrow-left");
 var currentImgIndex;
 
+/**
+ * @param {number} galleryId
+ * @returns {NodeListOf<Element>}
+*/
 function getImgQueryById(galleryId) {
   return document.querySelectorAll(`#galerie-${galleryId} img`);
 }
 
+/**
+ * @param {HTMLImageElement} pic 
+ * @param {number} galleryId
+*/
 function openFullImg(pic, galleryId) {
   var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
   var fullImg = document.getElementById(`fullImg${galleryId}`);
@@ -44,11 +52,17 @@ function openFullImg(pic, galleryId) {
   });
 }
 
+/**
+ * @param {number} galleryId 
+*/
 function closeFullImg(galleryId) {
   var fullImgBox = document.getElementById(`fullImgBox${galleryId}`);
   fullImgBox.style.display = "none";
 }
 
+/**
+ * @param {number} galleryId 
+*/
 function prevImg(galleryId) {
   var imgGallery = getImgQueryById(galleryId);
   if (currentImgIndex > 0) {
@@ -59,6 +73,9 @@ function prevImg(galleryId) {
   }
 }
 
+/**
+ * @param {number} galleryId 
+*/
 function nextImg(galleryId) {
   var imgGallery = getImgQueryById(galleryId);
   if (currentImgIndex < imgGallery.length - 1) {
@@ -69,6 +86,9 @@ function nextImg(galleryId) {
   }
 }
 
+/**
+ * @param {number} galleryId 
+*/
 function updateNavButtons(galleryId) {
   var imgGallery = getImgQueryById(galleryId);
   var prevButton = document.getElementById(`lightBoxPrev${galleryId}`);

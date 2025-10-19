@@ -4,7 +4,6 @@ let menu, menuInitHeight;
 let navbar, navbarHeight;
 let lastWidth, currentWidth;
 
-
 window.addEventListener('DOMContentLoaded', () => {
     menu = document.querySelector('.navbar-links');
     navbar = document.querySelector('.nav-wrapper');
@@ -40,6 +39,12 @@ function dropdown_nav() {
     }
 }
 
-function add_to_height(height, add_num) { 
+/**
+ * 
+ * @param {string} height 
+ * @param {number} add_num 
+ * @returns {string}
+*/
+function add_to_height(height, add_num) {
     return ((Number(height.split('px')[0]) + add_num) + 'px');
 }

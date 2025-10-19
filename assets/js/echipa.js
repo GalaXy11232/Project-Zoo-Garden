@@ -17,7 +17,7 @@ window.addEventListener('click', () => {
     })
 })
 
-window.addEventListener('load', ()=>{
+window.addEventListener('load', () => {
     tooltip_nodes_qsall.forEach(nd => tooltip_nodes.push(nd));
 
     tooltip_nodes.forEach(nd => {
